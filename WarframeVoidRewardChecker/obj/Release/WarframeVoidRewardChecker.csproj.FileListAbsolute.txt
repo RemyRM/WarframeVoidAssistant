@@ -1,0 +1,16 @@
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\bin\Release\x86\liblept1753.dll
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\bin\Release\x86\libtesseract3052.dll
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\bin\Release\x64\liblept1753.dll
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\bin\Release\x64\libtesseract3052.dll
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\bin\Release\WarframeVoidRewardChecker.exe.config
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\bin\Release\WarframeVoidRewardChecker.exe
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\bin\Release\WarframeVoidRewardChecker.pdb
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\bin\Release\Tesseract.dll
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\obj\Release\WarframeVoidRewardChecker.csprojAssemblyReference.cache
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\obj\Release\WarFrameVoidLootChecker.Form1.resources
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\obj\Release\WarframeVoidRewardChecker.Properties.Resources.resources
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\obj\Release\WarframeVoidRewardChecker.csproj.GenerateResource.cache
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\obj\Release\WarframeVoidRewardChecker.csproj.CoreCompileInputs.cache
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\obj\Release\WarframeVoidRewardChecker.csproj.CopyComplete
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\obj\Release\WarframeVoidRewardChecker.exe
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\obj\Release\WarframeVoidRewardChecker.pdb

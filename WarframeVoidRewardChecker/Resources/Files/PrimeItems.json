@@ -1,0 +1,2150 @@
+[
+  {
+    "item_name": "SCINDO PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "54a73e65e779893a797fff5d",
+    "url_name": "scindo_prime_handle"
+  },
+  {
+    "item_name": "EMBER PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "54a73e65e779893a797fff6d",
+    "url_name": "ember_prime_neuroptics"
+  },
+  {
+    "item_name": "LOKI PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff7c",
+    "url_name": "loki_prime_blueprint"
+  },
+  {
+    "item_name": "EMBER PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "54a73e65e779893a797fff7e",
+    "url_name": "ember_prime_chassis"
+  },
+  {
+    "item_name": "WYRM PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54ca431ce779891a1adb4901",
+    "url_name": "wyrm_prime_blueprint"
+  },
+  {
+    "item_name": "WYRM PRIME CARAPACE",
+    "thumb": "sub_icons/carapace_128x128.png",
+    "id": "54ca4330e779891a286a5428",
+    "url_name": "wyrm_prime_carapace"
+  },
+  {
+    "item_name": "HIKOU PRIME SET",
+    "thumb": "icons/en/thumbs/Hikou_Prime_Set.cd5cefce60a4e85c15614139a8ee9400.128x128.png",
+    "id": "56783f24cbfa8f0432dd899e",
+    "url_name": "hikou_prime_set"
+  },
+  {
+    "item_name": "PARIS PRIME SET",
+    "thumb": "icons/en/thumbs/Paris_Prime_Set.971f957f8304ce10617836343d47b238.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a9",
+    "url_name": "paris_prime_set"
+  },
+  {
+    "item_name": "TRINITY PRIME SET",
+    "thumb": "icons/en/thumbs/Trinity_Prime_Set.4115dba418ab8ee70197a7fdaee8da76.128x128.png",
+    "id": "56783f24cbfa8f0432dd89af",
+    "url_name": "trinity_prime_set"
+  },
+  {
+    "item_name": "VASTO PRIME SET",
+    "thumb": "icons/en/thumbs/Vasto_Prime_Set.213e4b3b9b3be0f4facb77fd5242b6a4.128x128.png",
+    "id": "56783f24cbfa8f0432dd89b0",
+    "url_name": "vasto_prime_set"
+  },
+  {
+    "item_name": "NEKROS PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "57bc9a40e506eb45ea251452",
+    "url_name": "nekros_prime_chassis"
+  },
+  {
+    "item_name": "NEKROS PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "57bc9a40e506eb45ea251453",
+    "url_name": "nekros_prime_neuroptics"
+  },
+  {
+    "item_name": "HELIOS PRIME SET",
+    "thumb": "icons/en/thumbs/Helios_Prime_Set.625b7c74ea5dd61b1840f8094df7648a.128x128.png",
+    "id": "58b57068eb26db5c31192114",
+    "url_name": "helios_prime_set"
+  },
+  {
+    "item_name": "HYDROID PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "59a48b625cd9938cfede7039",
+    "url_name": "hydroid_prime_neuroptics"
+  },
+  {
+    "item_name": "OBERON PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "592dd262011e88f094afec7e",
+    "url_name": "oberon_prime_neuroptics"
+  },
+  {
+    "item_name": "SYBARIS PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "592dd262011e88f094afec82",
+    "url_name": "sybaris_prime_blueprint"
+  },
+  {
+    "item_name": "BALLISTICA PRIME LOWER LIMB",
+    "thumb": "sub_icons/lower_limb_128x128.png",
+    "id": "59a5cd4d5cd9938cfede7044",
+    "url_name": "ballistica_prime_lower_limb"
+  },
+  {
+    "item_name": "HELIOS PRIME CEREBRUM",
+    "thumb": "sub_icons/cerebrum_128x128.png",
+    "id": "58b57068eb26db5c31192115",
+    "url_name": "helios_prime_cerebrum"
+  },
+  {
+    "item_name": "HELIOS PRIME CARAPACE",
+    "thumb": "sub_icons/carapace_128x128.png",
+    "id": "58b57068eb26db5c31192116",
+    "url_name": "helios_prime_carapace"
+  },
+  {
+    "item_name": "BALLISTICA PRIME SET",
+    "thumb": "icons/en/thumbs/Ballistica_Prime_Set.4ed33348008ace40406d0383f692ecac.128x128.png",
+    "id": "59a5c2565cd9938cfede703e",
+    "url_name": "ballistica_prime_set"
+  },
+  {
+    "item_name": "BALLISTICA PRIME STRING",
+    "thumb": "sub_icons/string_128x128.png",
+    "id": "59a5cd4d5cd9938cfede7045",
+    "url_name": "ballistica_prime_string"
+  },
+  {
+    "item_name": "SILVA & AEGIS PRIME GUARD",
+    "thumb": "sub_icons/guard_128x128.png",
+    "id": "592dd262011e88f094afec88",
+    "url_name": "silva_and_aegis_prime_guard"
+  },
+  {
+    "item_name": "ANKYROS PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "54a73e65e779893a797fff24",
+    "url_name": "ankyros_prime_blade"
+  },
+  {
+    "item_name": "ANKYROS PRIME GAUNTLET",
+    "thumb": "sub_icons/gauntlet_128x128.png",
+    "id": "54a73e65e779893a797fff26",
+    "url_name": "ankyros_prime_gauntlet"
+  },
+  {
+    "item_name": "BO PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff27",
+    "url_name": "bo_prime_blueprint"
+  },
+  {
+    "item_name": "BO PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "54a73e65e779893a797fff28",
+    "url_name": "bo_prime_handle"
+  },
+  {
+    "item_name": "BO PRIME ORNAMENT",
+    "thumb": "sub_icons/ornament_128x128.png",
+    "id": "54a73e65e779893a797fff29",
+    "url_name": "bo_prime_ornament"
+  },
+  {
+    "item_name": "FANG PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "54a73e65e779893a797fff42",
+    "url_name": "fang_prime_handle"
+  },
+  {
+    "item_name": "LATRON PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "54a73e65e779893a797fff49",
+    "url_name": "latron_prime_barrel"
+  },
+  {
+    "item_name": "ORTHOS PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "54a73e65e779893a797fff50",
+    "url_name": "orthos_prime_blade"
+  },
+  {
+    "item_name": "PARIS PRIME LOWER LIMB",
+    "thumb": "sub_icons/lower_limb_128x128.png",
+    "id": "54a73e65e779893a797fff54",
+    "url_name": "paris_prime_lower_limb"
+  },
+  {
+    "item_name": "NYX PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff72",
+    "url_name": "nyx_prime_blueprint"
+  },
+  {
+    "item_name": "LOKI PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "54a73e65e779893a797fff74",
+    "url_name": "loki_prime_systems"
+  },
+  {
+    "item_name": "NYX PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "54a73e65e779893a797fff76",
+    "url_name": "nyx_prime_systems"
+  },
+  {
+    "item_name": "RHINO PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "54a73e65e779893a797fff78",
+    "url_name": "rhino_prime_chassis"
+  },
+  {
+    "item_name": "EMBER PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "54a73e65e779893a797fff7a",
+    "url_name": "ember_prime_systems"
+  },
+  {
+    "item_name": "FROST PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "54a73e65e779893a797fff7d",
+    "url_name": "frost_prime_chassis"
+  },
+  {
+    "item_name": "RHINO PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "54a73e65e779893a797fff7f",
+    "url_name": "rhino_prime_systems"
+  },
+  {
+    "item_name": "EMBER PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff81",
+    "url_name": "ember_prime_blueprint"
+  },
+  {
+    "item_name": "WYRM PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "54ca4337e779891a2e3fbc83",
+    "url_name": "wyrm_prime_systems"
+  },
+  {
+    "item_name": "VOLT PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "55158cd0e7798915e9d64c1e",
+    "url_name": "volt_prime_neuroptics"
+  },
+  {
+    "item_name": "VOLT PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "55158cd9e7798915ee6bd13f",
+    "url_name": "volt_prime_chassis"
+  },
+  {
+    "item_name": "VOLT PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "55244820e779890907ef6805",
+    "url_name": "volt_prime_blueprint"
+  },
+  {
+    "item_name": "ODONATA PRIME HARNESS",
+    "thumb": "sub_icons/harness_128x128.png",
+    "id": "5527a279e77989205639861f",
+    "url_name": "odonata_prime_harness"
+  },
+  {
+    "item_name": "ODONATA PRIME SYSTEMS",
+    "thumb": "sub_icons/arch-system_128x128.png",
+    "id": "5527a288e77989205f31e525",
+    "url_name": "odonata_prime_systems"
+  },
+  {
+    "item_name": "ASH PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "559daa9fe779897b3263c2c7",
+    "url_name": "ash_prime_blueprint"
+  },
+  {
+    "item_name": "ASH PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "559daaa7e779897b35d626c6",
+    "url_name": "ash_prime_chassis"
+  },
+  {
+    "item_name": "ASH PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "559daaafe779897b399db0fd",
+    "url_name": "ash_prime_systems"
+  },
+  {
+    "item_name": "CARRIER PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "559daac1e779897b4253a85e",
+    "url_name": "carrier_prime_blueprint"
+  },
+  {
+    "item_name": "VECTIS PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "559daae0e779897b5273b716",
+    "url_name": "vectis_prime_barrel"
+  },
+  {
+    "item_name": "TRINITY PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "56153692b66f836f7d649936",
+    "url_name": "trinity_prime_neuroptics"
+  },
+  {
+    "item_name": "DUAL KAMAS PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "561536d5b66f836f889b79bb",
+    "url_name": "dual_kamas_prime_blueprint"
+  },
+  {
+    "item_name": "AKBRONCO PRIME SET",
+    "thumb": "icons/en/thumbs/Akbronco_Prime_Set.34b5a7f99e5f8c15cc2039a76c725069.128x128.png",
+    "id": "56783f24cbfa8f0432dd898d",
+    "url_name": "akbronco_prime_set"
+  },
+  {
+    "item_name": "ANKYROS PRIME SET",
+    "thumb": "icons/en/thumbs/Ankyros_Prime_Set.81b3e5876c214047d10a0d90f92ebdfe.128x128.png",
+    "id": "56783f24cbfa8f0432dd898e",
+    "url_name": "ankyros_prime_set"
+  },
+  {
+    "item_name": "CARRIER PRIME SET",
+    "thumb": "icons/en/thumbs/Carrier_Prime_Set.1f39e6e9ecef0225b0755dd5c89f3cc8.128x128.png",
+    "id": "56783f24cbfa8f0432dd8996",
+    "url_name": "carrier_prime_set"
+  },
+  {
+    "item_name": "DAKRA PRIME SET",
+    "thumb": "icons/en/thumbs/Dakra_Prime_Set.785a613039ec892abc579c176f0b33da.128x128.png",
+    "id": "56783f24cbfa8f0432dd8997",
+    "url_name": "dakra_prime_set"
+  },
+  {
+    "item_name": "DUAL KAMAS PRIME SET",
+    "thumb": "icons/en/thumbs/Dual_Kamas_Prime_Set.7d95cad6d71a59fa98902cc8bfe87da2.128x128.png",
+    "id": "56783f24cbfa8f0432dd8999",
+    "url_name": "dual_kamas_prime_set"
+  },
+  {
+    "item_name": "EMBER PRIME SET",
+    "thumb": "icons/en/thumbs/Ember_Prime_Set.971255acc3f1ad8a374d236c6af1c816.128x128.png",
+    "id": "56783f24cbfa8f0432dd899a",
+    "url_name": "ember_prime_set"
+  },
+  {
+    "item_name": "FANG PRIME SET",
+    "thumb": "icons/en/thumbs/Fang_Prime_Set.13b0c690a76382d0fbdebe84e4c509db.128x128.png",
+    "id": "56783f24cbfa8f0432dd899b",
+    "url_name": "fang_prime_set"
+  },
+  {
+    "item_name": "MAG PRIME SET",
+    "thumb": "icons/en/thumbs/Mag_Prime_Set.2afb45373319b966737bd91cf05a813c.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a4",
+    "url_name": "mag_prime_set"
+  },
+  {
+    "item_name": "AKBRONCO PRIME LINK",
+    "thumb": "sub_icons/link_128x128.png",
+    "id": "54a73e65e779893a797fff23",
+    "url_name": "akbronco_prime_link"
+  },
+  {
+    "item_name": "DAKRA PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "54a73e65e779893a797fff3f",
+    "url_name": "dakra_prime_handle"
+  },
+  {
+    "item_name": "HIKOU PRIME POUCH",
+    "thumb": "sub_icons/pouch_128x128.png",
+    "id": "54a73e65e779893a797fff47",
+    "url_name": "hikou_prime_pouch"
+  },
+  {
+    "item_name": "ORTHOS PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "54a73e65e779893a797fff52",
+    "url_name": "orthos_prime_handle"
+  },
+  {
+    "item_name": "REAPER PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "54a73e65e779893a797fff58",
+    "url_name": "reaper_prime_blade"
+  },
+  {
+    "item_name": "REAPER PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff59",
+    "url_name": "reaper_prime_blueprint"
+  },
+  {
+    "item_name": "SCINDO PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff5c",
+    "url_name": "scindo_prime_blueprint"
+  },
+  {
+    "item_name": "SOMA PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "54a73e65e779893a797fff61",
+    "url_name": "soma_prime_barrel"
+  },
+  {
+    "item_name": "SOMA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff62",
+    "url_name": "soma_prime_blueprint"
+  },
+  {
+    "item_name": "VASTO PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "54a73e65e779893a797fff65",
+    "url_name": "vasto_prime_barrel"
+  },
+  {
+    "item_name": "VASTO PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff66",
+    "url_name": "vasto_prime_blueprint"
+  },
+  {
+    "item_name": "SARYN PRIME SET",
+    "thumb": "icons/en/thumbs/Saryn_Prime_Set.394094bef0383f954bd38d622bb075e5.128x128.png",
+    "id": "56c3bbea5d2f0202da32e93f",
+    "url_name": "saryn_prime_set"
+  },
+  {
+    "item_name": "NOVA PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "54a73e65e779893a797fff68",
+    "url_name": "nova_prime_neuroptics"
+  },
+  {
+    "item_name": "NOVA PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "54a73e65e779893a797fff69",
+    "url_name": "nova_prime_chassis"
+  },
+  {
+    "item_name": "NOVA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff6b",
+    "url_name": "nova_prime_blueprint"
+  },
+  {
+    "item_name": "FROST PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "54a73e65e779893a797fff6c",
+    "url_name": "frost_prime_neuroptics"
+  },
+  {
+    "item_name": "MAG PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "54a73e65e779893a797fff6e",
+    "url_name": "mag_prime_neuroptics"
+  },
+  {
+    "item_name": "RHINO PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "54a73e65e779893a797fff6f",
+    "url_name": "rhino_prime_neuroptics"
+  },
+  {
+    "item_name": "LOKI PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "54a73e65e779893a797fff70",
+    "url_name": "loki_prime_neuroptics"
+  },
+  {
+    "item_name": "NYX PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "54a73e65e779893a797fff71",
+    "url_name": "nyx_prime_neuroptics"
+  },
+  {
+    "item_name": "NYX PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "54a73e65e779893a797fff73",
+    "url_name": "nyx_prime_chassis"
+  },
+  {
+    "item_name": "LOKI PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "54a73e65e779893a797fff75",
+    "url_name": "loki_prime_chassis"
+  },
+  {
+    "item_name": "RHINO PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff77",
+    "url_name": "rhino_prime_blueprint"
+  },
+  {
+    "item_name": "FROST PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "54a73e65e779893a797fff79",
+    "url_name": "frost_prime_systems"
+  },
+  {
+    "item_name": "MAG PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "54a73e65e779893a797fff7b",
+    "url_name": "mag_prime_systems"
+  },
+  {
+    "item_name": "MAG PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "54a73e65e779893a797fff83",
+    "url_name": "mag_prime_chassis"
+  },
+  {
+    "item_name": "TIGRIS PRIME STOCK",
+    "thumb": "sub_icons/stock_128x128.png",
+    "id": "57bc9c84e506eb45ea251456",
+    "url_name": "tigris_prime_stock"
+  },
+  {
+    "item_name": "TIGRIS PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "57bc9c84e506eb45ea251458",
+    "url_name": "tigris_prime_receiver"
+  },
+  {
+    "item_name": "TIGRIS PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "57bc9c84e506eb45ea251459",
+    "url_name": "tigris_prime_blueprint"
+  },
+  {
+    "item_name": "VALKYR PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "58358a062c2ada0047b386f7",
+    "url_name": "valkyr_prime_neuroptics"
+  },
+  {
+    "item_name": "VENKA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "58358e192c2ada00655a4ef4",
+    "url_name": "venka_prime_blueprint"
+  },
+  {
+    "item_name": "VENKA PRIME SET",
+    "thumb": "icons/en/thumbs/Venka_Prime_Set.123cb62ab1e8a4edd78997a256cf1e7f.128x128.png",
+    "id": "58358e1d2c2ada00655a4ef7",
+    "url_name": "venka_prime_set"
+  },
+  {
+    "item_name": "WYRM PRIME CEREBRUM",
+    "thumb": "sub_icons/cerebrum_128x128.png",
+    "id": "54ca4329e779891a21d036bd",
+    "url_name": "wyrm_prime_cerebrum"
+  },
+  {
+    "item_name": "VOLT PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "55158ce0e7798915f4c95b78",
+    "url_name": "volt_prime_systems"
+  },
+  {
+    "item_name": "ASH PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "559daab7e779897b3d86cb8f",
+    "url_name": "ash_prime_neuroptics"
+  },
+  {
+    "item_name": "CARRIER PRIME CARAPACE",
+    "thumb": "sub_icons/carapace_128x128.png",
+    "id": "559daad1e779897b4be73862",
+    "url_name": "carrier_prime_carapace"
+  },
+  {
+    "item_name": "VECTIS PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "559daaefe779897b5a2d3551",
+    "url_name": "vectis_prime_receiver"
+  },
+  {
+    "item_name": "VECTIS PRIME STOCK",
+    "thumb": "sub_icons/stock_128x128.png",
+    "id": "559daaf7e779897b5f3f5480",
+    "url_name": "vectis_prime_stock"
+  },
+  {
+    "item_name": "TRINITY PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "56153689b66f836f7a3c0baf",
+    "url_name": "trinity_prime_blueprint"
+  },
+  {
+    "item_name": "KAVASA PRIME COLLAR BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "56153727b66f836f91a8e849",
+    "url_name": "kavasa_prime_collar_blueprint"
+  },
+  {
+    "item_name": "HELIOS PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "58b57068eb26db5c31192118",
+    "url_name": "helios_prime_blueprint"
+  },
+  {
+    "item_name": "VECTIS PRIME SET",
+    "thumb": "icons/en/thumbs/Vectis_Prime_Set.028e001af4469482df80bff29542e043.128x128.png",
+    "id": "56783f24cbfa8f0432dd89b1",
+    "url_name": "vectis_prime_set"
+  },
+  {
+    "item_name": "VOLT PRIME SET",
+    "thumb": "icons/en/thumbs/Volt_Prime_Set.9481daa3eb02aaec1108cdbeeaeea159.128x128.png",
+    "id": "56783f24cbfa8f0432dd89b2",
+    "url_name": "volt_prime_set"
+  },
+  {
+    "item_name": "WYRM PRIME SET",
+    "thumb": "icons/en/thumbs/Wyrm_Prime_Set.4da3da5cc8eeef554dc3208bbb5a8f26.128x128.png",
+    "id": "56783f24cbfa8f0432dd89b3",
+    "url_name": "wyrm_prime_set"
+  },
+  {
+    "item_name": "SYBARIS PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "592dd262011e88f094afec85",
+    "url_name": "sybaris_prime_barrel"
+  },
+  {
+    "item_name": "BANSHEE PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "58b57068eb26db5c3119210c",
+    "url_name": "banshee_prime_chassis"
+  },
+  {
+    "item_name": "EUPHONA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "58b57068eb26db5c31192112",
+    "url_name": "euphona_prime_blueprint"
+  },
+  {
+    "item_name": "HYDROID PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "59a48b625cd9938cfede703b",
+    "url_name": "hydroid_prime_systems"
+  },
+  {
+    "item_name": "HYDROID PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "59a48b625cd9938cfede703a",
+    "url_name": "hydroid_prime_chassis"
+  },
+  {
+    "item_name": "AKBRONCO PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff22",
+    "url_name": "akbronco_prime_blueprint"
+  },
+  {
+    "item_name": "ANKYROS PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff25",
+    "url_name": "ankyros_prime_blueprint"
+  },
+  {
+    "item_name": "BOAR PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "54a73e65e779893a797fff2a",
+    "url_name": "boar_prime_barrel"
+  },
+  {
+    "item_name": "BOAR PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff2b",
+    "url_name": "boar_prime_blueprint"
+  },
+  {
+    "item_name": "BOAR PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "54a73e65e779893a797fff2c",
+    "url_name": "boar_prime_receiver"
+  },
+  {
+    "item_name": "BOAR PRIME STOCK",
+    "thumb": "sub_icons/stock_128x128.png",
+    "id": "54a73e65e779893a797fff2d",
+    "url_name": "boar_prime_stock"
+  },
+  {
+    "item_name": "BOLTOR PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "54a73e65e779893a797fff2e",
+    "url_name": "boltor_prime_barrel"
+  },
+  {
+    "item_name": "BOLTOR PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff2f",
+    "url_name": "boltor_prime_blueprint"
+  },
+  {
+    "item_name": "BOLTOR PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "54a73e65e779893a797fff30",
+    "url_name": "boltor_prime_receiver"
+  },
+  {
+    "item_name": "BOLTOR PRIME STOCK",
+    "thumb": "sub_icons/stock_128x128.png",
+    "id": "54a73e65e779893a797fff31",
+    "url_name": "boltor_prime_stock"
+  },
+  {
+    "item_name": "BRATON PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "54a73e65e779893a797fff32",
+    "url_name": "braton_prime_barrel"
+  },
+  {
+    "item_name": "BRATON PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff33",
+    "url_name": "braton_prime_blueprint"
+  },
+  {
+    "item_name": "BRATON PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "54a73e65e779893a797fff34",
+    "url_name": "braton_prime_receiver"
+  },
+  {
+    "item_name": "BRATON PRIME STOCK",
+    "thumb": "sub_icons/stock_128x128.png",
+    "id": "54a73e65e779893a797fff35",
+    "url_name": "braton_prime_stock"
+  },
+  {
+    "item_name": "BRONCO PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "54a73e65e779893a797fff36",
+    "url_name": "bronco_prime_barrel"
+  },
+  {
+    "item_name": "BRONCO PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff37",
+    "url_name": "bronco_prime_blueprint"
+  },
+  {
+    "item_name": "BRONCO PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "54a73e65e779893a797fff38",
+    "url_name": "bronco_prime_receiver"
+  },
+  {
+    "item_name": "BURSTON PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "54a73e65e779893a797fff39",
+    "url_name": "burston_prime_barrel"
+  },
+  {
+    "item_name": "BURSTON PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff3a",
+    "url_name": "burston_prime_blueprint"
+  },
+  {
+    "item_name": "BURSTON PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "54a73e65e779893a797fff3b",
+    "url_name": "burston_prime_receiver"
+  },
+  {
+    "item_name": "BURSTON PRIME STOCK",
+    "thumb": "sub_icons/stock_128x128.png",
+    "id": "54a73e65e779893a797fff3c",
+    "url_name": "burston_prime_stock"
+  },
+  {
+    "item_name": "DAKRA PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "54a73e65e779893a797fff3d",
+    "url_name": "dakra_prime_blade"
+  },
+  {
+    "item_name": "DAKRA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff3e",
+    "url_name": "dakra_prime_blueprint"
+  },
+  {
+    "item_name": "FANG PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "54a73e65e779893a797fff40",
+    "url_name": "fang_prime_blade"
+  },
+  {
+    "item_name": "FANG PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff41",
+    "url_name": "fang_prime_blueprint"
+  },
+  {
+    "item_name": "GLAIVE PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "54a73e65e779893a797fff43",
+    "url_name": "glaive_prime_blade"
+  },
+  {
+    "item_name": "GLAIVE PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff44",
+    "url_name": "glaive_prime_blueprint"
+  },
+  {
+    "item_name": "GLAIVE PRIME DISC",
+    "thumb": "sub_icons/disc_128x128.png",
+    "id": "54a73e65e779893a797fff45",
+    "url_name": "glaive_prime_disc"
+  },
+  {
+    "item_name": "HIKOU PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff46",
+    "url_name": "hikou_prime_blueprint"
+  },
+  {
+    "item_name": "HIKOU PRIME STARS",
+    "thumb": "sub_icons/stars_128x128.png",
+    "id": "54a73e65e779893a797fff48",
+    "url_name": "hikou_prime_stars"
+  },
+  {
+    "item_name": "LATRON PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff4a",
+    "url_name": "latron_prime_blueprint"
+  },
+  {
+    "item_name": "LATRON PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "54a73e65e779893a797fff4b",
+    "url_name": "latron_prime_receiver"
+  },
+  {
+    "item_name": "LATRON PRIME STOCK",
+    "thumb": "sub_icons/stock_128x128.png",
+    "id": "54a73e65e779893a797fff4c",
+    "url_name": "latron_prime_stock"
+  },
+  {
+    "item_name": "LEX PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "54a73e65e779893a797fff4d",
+    "url_name": "lex_prime_barrel"
+  },
+  {
+    "item_name": "LEX PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff4e",
+    "url_name": "lex_prime_blueprint"
+  },
+  {
+    "item_name": "ORTHOS PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff51",
+    "url_name": "orthos_prime_blueprint"
+  },
+  {
+    "item_name": "PARIS PRIME GRIP",
+    "thumb": "sub_icons/grip_128x128.png",
+    "id": "54a73e65e779893a797fff53",
+    "url_name": "paris_prime_grip"
+  },
+  {
+    "item_name": "PARIS PRIME STRING",
+    "thumb": "sub_icons/string_128x128.png",
+    "id": "54a73e65e779893a797fff56",
+    "url_name": "paris_prime_string"
+  },
+  {
+    "item_name": "REAPER PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "54a73e65e779893a797fff5a",
+    "url_name": "reaper_prime_handle"
+  },
+  {
+    "item_name": "SICARUS PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "54a73e65e779893a797fff5e",
+    "url_name": "sicarus_prime_barrel"
+  },
+  {
+    "item_name": "SICARUS PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff5f",
+    "url_name": "sicarus_prime_blueprint"
+  },
+  {
+    "item_name": "SICARUS PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "54a73e65e779893a797fff60",
+    "url_name": "sicarus_prime_receiver"
+  },
+  {
+    "item_name": "SOMA PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "54a73e65e779893a797fff63",
+    "url_name": "soma_prime_receiver"
+  },
+  {
+    "item_name": "SOMA PRIME STOCK",
+    "thumb": "sub_icons/stock_128x128.png",
+    "id": "54a73e65e779893a797fff64",
+    "url_name": "soma_prime_stock"
+  },
+  {
+    "item_name": "VASTO PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "54a73e65e779893a797fff67",
+    "url_name": "vasto_prime_receiver"
+  },
+  {
+    "item_name": "NOVA PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "54a73e65e779893a797fff6a",
+    "url_name": "nova_prime_systems"
+  },
+  {
+    "item_name": "FROST PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff80",
+    "url_name": "frost_prime_blueprint"
+  },
+  {
+    "item_name": "VAUBAN PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "573b7fc20ec44a47787a690e",
+    "url_name": "vauban_prime_chassis"
+  },
+  {
+    "item_name": "VAUBAN PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "573b7fc80ec44a47787a690f",
+    "url_name": "vauban_prime_neuroptics"
+  },
+  {
+    "item_name": "VAUBAN PRIME SET",
+    "thumb": "icons/en/thumbs/Vauban_Prime_Set.9c15bb47d3ed4ed8e960c2502fac82f2.128x128.png",
+    "id": "573b7fcc0ec44a47787a6910",
+    "url_name": "vauban_prime_set"
+  },
+  {
+    "item_name": "FRAGOR PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "573b801c0ec44a47787a6911",
+    "url_name": "fragor_prime_blueprint"
+  },
+  {
+    "item_name": "FRAGOR PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "573b80230ec44a47787a6912",
+    "url_name": "fragor_prime_handle"
+  },
+  {
+    "item_name": "FRAGOR PRIME HEAD",
+    "thumb": "sub_icons/head_128x128.png",
+    "id": "573b80280ec44a47787a6913",
+    "url_name": "fragor_prime_head"
+  },
+  {
+    "item_name": "FRAGOR PRIME SET",
+    "thumb": "icons/en/thumbs/Fragor_Prime_Set.2b917b8a12f0981ff0a9a48c6c24edb1.128x128.png",
+    "id": "573b802f0ec44a47787a6914",
+    "url_name": "fragor_prime_set"
+  },
+  {
+    "item_name": "AKSTILETTO PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "573b80450ec44a47787a6915",
+    "url_name": "akstiletto_prime_blueprint"
+  },
+  {
+    "item_name": "AKSTILETTO PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "573b804a0ec44a47787a6916",
+    "url_name": "akstiletto_prime_barrel"
+  },
+  {
+    "item_name": "AKSTILETTO PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "573b804f0ec44a47787a6917",
+    "url_name": "akstiletto_prime_receiver"
+  },
+  {
+    "item_name": "AKSTILETTO PRIME LINK",
+    "thumb": "sub_icons/link_128x128.png",
+    "id": "573b80590ec44a47787a6918",
+    "url_name": "akstiletto_prime_link"
+  },
+  {
+    "item_name": "NEKROS PRIME SET",
+    "thumb": "icons/en/thumbs/Nekros_Prime_Set.523943a15c82985ebe7cf14eac98966d.128x128.png",
+    "id": "57bc9a40e506eb45ea251451",
+    "url_name": "nekros_prime_set"
+  },
+  {
+    "item_name": "NEKROS PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "57bc9a40e506eb45ea251454",
+    "url_name": "nekros_prime_systems"
+  },
+  {
+    "item_name": "GALATINE PRIME SET",
+    "thumb": "icons/en/thumbs/Galatine_Prime_Set.066b855eb73def09ca5f21f677010098.128x128.png",
+    "id": "57bc9c99e506eb45ea25145a",
+    "url_name": "galatine_prime_set"
+  },
+  {
+    "item_name": "GALATINE PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "57bc9c99e506eb45ea25145b",
+    "url_name": "galatine_prime_handle"
+  },
+  {
+    "item_name": "GALATINE PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "57bc9c99e506eb45ea25145c",
+    "url_name": "galatine_prime_blade"
+  },
+  {
+    "item_name": "GALATINE PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "57bc9c99e506eb45ea25145d",
+    "url_name": "galatine_prime_blueprint"
+  },
+  {
+    "item_name": "TRINITY PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "5615369ab66f836f805c5a8b",
+    "url_name": "trinity_prime_chassis"
+  },
+  {
+    "item_name": "NEKROS PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "57bcb14ce506eb45ea25145e",
+    "url_name": "nekros_prime_blueprint"
+  },
+  {
+    "item_name": "TRINITY PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "561536a1b66f836f854b966a",
+    "url_name": "trinity_prime_systems"
+  },
+  {
+    "item_name": "DUAL KAMAS PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "561536deb66f836f8bbaca47",
+    "url_name": "dual_kamas_prime_blade"
+  },
+  {
+    "item_name": "DUAL KAMAS PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "561536e4b66f836f8e15eb18",
+    "url_name": "dual_kamas_prime_handle"
+  },
+  {
+    "item_name": "KAVASA PRIME COLLAR BUCKLE",
+    "thumb": "sub_icons/buckle_128x128.png",
+    "id": "56153730b66f836f9488bcce",
+    "url_name": "kavasa_prime_collar_buckle"
+  },
+  {
+    "item_name": "KAVASA PRIME COLLAR BAND",
+    "thumb": "sub_icons/band_128x128.png",
+    "id": "56153734b66f836f976f5501",
+    "url_name": "kavasa_prime_collar_band"
+  },
+  {
+    "item_name": "GLAIVE PRIME SET",
+    "thumb": "icons/en/thumbs/Glaive_Prime_Set.17767ab370f143a315df90177995ef92.128x128.png",
+    "id": "56783f24cbfa8f0432dd899d",
+    "url_name": "glaive_prime_set"
+  },
+  {
+    "item_name": "ORTHOS PRIME SET",
+    "thumb": "icons/en/thumbs/Orthos_Prime_Set.049c8584708b849d1eff500b182825f2.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a8",
+    "url_name": "orthos_prime_set"
+  },
+  {
+    "item_name": "REAPER PRIME SET",
+    "thumb": "icons/en/thumbs/Reaper_Prime_Set.4e1d36812203a97fd0191930485b1095.128x128.png",
+    "id": "56783f24cbfa8f0432dd89aa",
+    "url_name": "reaper_prime_set"
+  },
+  {
+    "item_name": "RHINO PRIME SET",
+    "thumb": "icons/en/thumbs/Rhino_Prime_Set.22301207f9463fe9ab215e40eb23a326.128x128.png",
+    "id": "56783f24cbfa8f0432dd89ab",
+    "url_name": "rhino_prime_set"
+  },
+  {
+    "item_name": "SCINDO PRIME SET",
+    "thumb": "icons/en/thumbs/Scindo_Prime_Set.ae70ac90b811a44f64263394b6410c28.128x128.png",
+    "id": "56783f24cbfa8f0432dd89ac",
+    "url_name": "scindo_prime_set"
+  },
+  {
+    "item_name": "SICARUS PRIME SET",
+    "thumb": "icons/en/thumbs/Sicarus_Prime_Set.e7c07172e6d63d49ae349d508c56fc85.128x128.png",
+    "id": "56783f24cbfa8f0432dd89ad",
+    "url_name": "sicarus_prime_set"
+  },
+  {
+    "item_name": "VAUBAN PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "573b7fbd0ec44a47787a690d",
+    "url_name": "vauban_prime_blueprint"
+  },
+  {
+    "item_name": "AKSTILETTO PRIME SET",
+    "thumb": "icons/en/thumbs/Akstiletto_Prime_Set.a88c0a1e43ba462af7cc44efd01a7044.128x128.png",
+    "id": "573b805f0ec44a47787a6919",
+    "url_name": "akstiletto_prime_set"
+  },
+  {
+    "item_name": "TIGRIS PRIME SET",
+    "thumb": "icons/en/thumbs/Tigris_Prime_Set.5f82721ea78697c95208b9bceb72c4a4.128x128.png",
+    "id": "57bc9c84e506eb45ea251455",
+    "url_name": "tigris_prime_set"
+  },
+  {
+    "item_name": "TIGRIS PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "57bc9c84e506eb45ea251457",
+    "url_name": "tigris_prime_barrel"
+  },
+  {
+    "item_name": "VALKYR PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "58358a092c2ada0047b386f8",
+    "url_name": "valkyr_prime_chassis"
+  },
+  {
+    "item_name": "VALKYR PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "58358a0c2c2ada0047b386f9",
+    "url_name": "valkyr_prime_systems"
+  },
+  {
+    "item_name": "VENKA PRIME GAUNTLET",
+    "thumb": "sub_icons/gauntlet_128x128.png",
+    "id": "58358e1b2c2ada00655a4ef5",
+    "url_name": "venka_prime_gauntlet"
+  },
+  {
+    "item_name": "CERNOS PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "583580d52c2ada003badef85",
+    "url_name": "cernos_prime_blueprint"
+  },
+  {
+    "item_name": "CERNOS PRIME LOWER LIMB",
+    "thumb": "sub_icons/lower_limb_128x128.png",
+    "id": "583580e12c2ada003badef86",
+    "url_name": "cernos_prime_lower_limb"
+  },
+  {
+    "item_name": "CERNOS PRIME UPPER LIMB",
+    "thumb": "sub_icons/upper_limb_128x128.png",
+    "id": "583580f42c2ada003badef87",
+    "url_name": "cernos_prime_upper_limb"
+  },
+  {
+    "item_name": "CERNOS PRIME GRIP",
+    "thumb": "sub_icons/grip_128x128.png",
+    "id": "583580fb2c2ada003badef88",
+    "url_name": "cernos_prime_grip"
+  },
+  {
+    "item_name": "CERNOS PRIME STRING",
+    "thumb": "sub_icons/string_128x128.png",
+    "id": "583580fd2c2ada003badef89",
+    "url_name": "cernos_prime_string"
+  },
+  {
+    "item_name": "CERNOS PRIME SET",
+    "thumb": "icons/en/thumbs/Cernos_Prime_Set.b3ac02e80ee17cc0756348f1d04b69cc.128x128.png",
+    "id": "583580ff2c2ada003badef8a",
+    "url_name": "cernos_prime_set"
+  },
+  {
+    "item_name": "VALKYR PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "583589fd2c2ada0047b386f6",
+    "url_name": "valkyr_prime_blueprint"
+  },
+  {
+    "item_name": "VALKYR PRIME SET",
+    "thumb": "icons/en/thumbs/Valkyr_Prime_Set.a5c906d66a11ff70158f0ffad0c628e8.128x128.png",
+    "id": "58358a0e2c2ada0047b386fa",
+    "url_name": "valkyr_prime_set"
+  },
+  {
+    "item_name": "VENKA PRIME BLADES",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "58358e1c2c2ada00655a4ef6",
+    "url_name": "venka_prime_blades"
+  },
+  {
+    "item_name": "AKLEX PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "588bc3bcc353473a172364f2",
+    "url_name": "aklex_prime_blueprint"
+  },
+  {
+    "item_name": "AKLEX PRIME SET",
+    "thumb": "icons/en/thumbs/Aklex_Prime_Set.d4be2f3e545d5e1101d5b83a027e68fe.128x128.png",
+    "id": "588c7a51c353473a172364f4",
+    "url_name": "aklex_prime_set"
+  },
+  {
+    "item_name": "BALLISTICA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "59a5c2565cd9938cfede703d",
+    "url_name": "ballistica_prime_blueprint"
+  },
+  {
+    "item_name": "EUPHONA PRIME SET",
+    "thumb": "icons/en/thumbs/Euphona_Prime_Set.6a18cc50c57ac13c3203e872baf85a8d.128x128.png",
+    "id": "58b57068eb26db5c31192113",
+    "url_name": "euphona_prime_set"
+  },
+  {
+    "item_name": "OBERON PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "592dd262011e88f094afec7f",
+    "url_name": "oberon_prime_chassis"
+  },
+  {
+    "item_name": "BANSHEE PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "58b57068eb26db5c3119210b",
+    "url_name": "banshee_prime_neuroptics"
+  },
+  {
+    "item_name": "SILVA & AEGIS PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "592dd262011e88f094afec8a",
+    "url_name": "silva_and_aegis_prime_blade"
+  },
+  {
+    "item_name": "SYBARIS PRIME STOCK",
+    "thumb": "sub_icons/stock_128x128.png",
+    "id": "592dd262011e88f094afec83",
+    "url_name": "sybaris_prime_stock"
+  },
+  {
+    "item_name": "SYBARIS PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "592dd262011e88f094afec84",
+    "url_name": "sybaris_prime_receiver"
+  },
+  {
+    "item_name": "SYBARIS PRIME SET",
+    "thumb": "icons/en/thumbs/Sybaris_Prime_Set.39d7dc4a904f7db7e7c78901976aa5fa.128x128.png",
+    "id": "592dd262011e88f094afec86",
+    "url_name": "sybaris_prime_set"
+  },
+  {
+    "item_name": "OBERON PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "592dd262011e88f094afec80",
+    "url_name": "oberon_prime_systems"
+  },
+  {
+    "item_name": "BALLISTICA PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "59a5cd4d5cd9938cfede7046",
+    "url_name": "ballistica_prime_receiver"
+  },
+  {
+    "item_name": "BANSHEE PRIME SET",
+    "thumb": "icons/en/thumbs/Banshee_Prime_Set.a0956816beb733841bce57e69a568cd6.128x128.png",
+    "id": "58b57068eb26db5c3119210e",
+    "url_name": "banshee_prime_set"
+  },
+  {
+    "item_name": "AKLEX PRIME LINK",
+    "thumb": "sub_icons/link_128x128.png",
+    "id": "588c7923c353473a172364f3",
+    "url_name": "aklex_prime_link"
+  },
+  {
+    "item_name": "OBERON PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "592dd262011e88f094afec7d",
+    "url_name": "oberon_prime_blueprint"
+  },
+  {
+    "item_name": "BALLISTICA PRIME UPPER LIMB",
+    "thumb": "sub_icons/upper_limb_128x128.png",
+    "id": "59a5cd4d5cd9938cfede7043",
+    "url_name": "ballistica_prime_upper_limb"
+  },
+  {
+    "item_name": "BANSHEE PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "58b57068eb26db5c3119210d",
+    "url_name": "banshee_prime_systems"
+  },
+  {
+    "item_name": "HYDROID PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "59a48b625cd9938cfede7038",
+    "url_name": "hydroid_prime_blueprint"
+  },
+  {
+    "item_name": "LEX PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "54a73e65e779893a797fff4f",
+    "url_name": "lex_prime_receiver"
+  },
+  {
+    "item_name": "NAMI SKYLA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "59a5c2565cd9938cfede703f",
+    "url_name": "nami_skyla_prime_blueprint"
+  },
+  {
+    "item_name": "PARIS PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff55",
+    "url_name": "paris_prime_blueprint"
+  },
+  {
+    "item_name": "SILVA & AEGIS PRIME HILT",
+    "thumb": "sub_icons/hilt_128x128.png",
+    "id": "592dd262011e88f094afec89",
+    "url_name": "silva_and_aegis_prime_hilt"
+  },
+  {
+    "item_name": "PARIS PRIME UPPER LIMB",
+    "thumb": "sub_icons/upper_limb_128x128.png",
+    "id": "54a73e65e779893a797fff57",
+    "url_name": "paris_prime_upper_limb"
+  },
+  {
+    "item_name": "SILVA & AEGIS PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "592dd262011e88f094afec87",
+    "url_name": "silva_and_aegis_prime_blueprint"
+  },
+  {
+    "item_name": "SCINDO PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "54a73e65e779893a797fff5b",
+    "url_name": "scindo_prime_blade"
+  },
+  {
+    "item_name": "EUPHONA PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "58b57068eb26db5c3119210f",
+    "url_name": "euphona_prime_barrel"
+  },
+  {
+    "item_name": "MAG PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "54a73e65e779893a797fff82",
+    "url_name": "mag_prime_blueprint"
+  },
+  {
+    "item_name": "BANSHEE PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "58b57068eb26db5c3119210a",
+    "url_name": "banshee_prime_blueprint"
+  },
+  {
+    "item_name": "OBERON PRIME SET",
+    "thumb": "icons/en/thumbs/Oberon_Prime_Set.d7f1623552bce11f166b715679e27022.128x128.png",
+    "id": "592dd262011e88f094afec81",
+    "url_name": "oberon_prime_set"
+  },
+  {
+    "item_name": "EUPHONA PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "58b57068eb26db5c31192111",
+    "url_name": "euphona_prime_receiver"
+  },
+  {
+    "item_name": "SILVA & AEGIS PRIME SET",
+    "thumb": "icons/en/thumbs/Silva_&_Aegis_Prime_Set.d226bbe86d3eccd8c751958dba46a4f6.128x128.png",
+    "id": "592dd262011e88f094afec8b",
+    "url_name": "silva_and_aegis_prime_set"
+  },
+  {
+    "item_name": "NAMI SKYLA PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "59a5cd4d5cd9938cfede7042",
+    "url_name": "nami_skyla_prime_handle"
+  },
+  {
+    "item_name": "ODONATA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5527a26de77989205156b2b7",
+    "url_name": "odonata_prime_blueprint"
+  },
+  {
+    "item_name": "ODONATA PRIME WINGS",
+    "thumb": "sub_icons/wings_128x128.png",
+    "id": "5527a280e779892059574ca9",
+    "url_name": "odonata_prime_wings"
+  },
+  {
+    "item_name": "CARRIER PRIME CEREBRUM",
+    "thumb": "sub_icons/cerebrum_128x128.png",
+    "id": "559daacae779897b47b74c13",
+    "url_name": "carrier_prime_cerebrum"
+  },
+  {
+    "item_name": "CARRIER PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "559daad8e779897b4f59525f",
+    "url_name": "carrier_prime_systems"
+  },
+  {
+    "item_name": "VECTIS PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "559daae8e779897b56bee133",
+    "url_name": "vectis_prime_blueprint"
+  },
+  {
+    "item_name": "BO PRIME SET",
+    "thumb": "icons/en/thumbs/Bo_Prime_Set.fad65cfb95d62a4275be60be30375846.128x128.png",
+    "id": "56783f24cbfa8f0432dd8990",
+    "url_name": "bo_prime_set"
+  },
+  {
+    "item_name": "BOAR PRIME SET",
+    "thumb": "icons/en/thumbs/Boar_Prime_Set.5e8a5ba1520169c7a99c738624328d26.128x128.png",
+    "id": "56783f24cbfa8f0432dd8991",
+    "url_name": "boar_prime_set"
+  },
+  {
+    "item_name": "BOLTOR PRIME SET",
+    "thumb": "icons/en/thumbs/Boltor_Prime_Set.a26157003dea5b1e1fe6660f46f3ea11.128x128.png",
+    "id": "56783f24cbfa8f0432dd8992",
+    "url_name": "boltor_prime_set"
+  },
+  {
+    "item_name": "BRATON PRIME SET",
+    "thumb": "icons/en/thumbs/Braton_Prime_Set.ae229642d6179ebfb1547ed7d976e749.128x128.png",
+    "id": "56783f24cbfa8f0432dd8993",
+    "url_name": "braton_prime_set"
+  },
+  {
+    "item_name": "BRONCO PRIME SET",
+    "thumb": "icons/en/thumbs/Bronco_Prime_Set.aa5499a3b26806f1f26a987be9dcf0ca.128x128.png",
+    "id": "56783f24cbfa8f0432dd8994",
+    "url_name": "bronco_prime_set"
+  },
+  {
+    "item_name": "BURSTON PRIME SET",
+    "thumb": "icons/en/thumbs/Burston_Prime_Set.9fc6c6a6dca24113027828df669cd89e.128x128.png",
+    "id": "56783f24cbfa8f0432dd8995",
+    "url_name": "burston_prime_set"
+  },
+  {
+    "item_name": "FROST PRIME SET",
+    "thumb": "icons/en/thumbs/Frost_Prime_Set.4f8ff8605be1afaab9a0e5cc3c67cb21.128x128.png",
+    "id": "56783f24cbfa8f0432dd899c",
+    "url_name": "frost_prime_set"
+  },
+  {
+    "item_name": "KAVASA PRIME COLLAR SET",
+    "thumb": "icons/en/thumbs/Kavasa_Prime_Collar_Set.cc1bafee4156c05ebaa812d39cd559ba.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a0",
+    "url_name": "kavasa_prime_collar_set"
+  },
+  {
+    "item_name": "LATRON PRIME SET",
+    "thumb": "icons/en/thumbs/Latron_Prime_Set.5c8b8009acbdb97fd49177ba155ecfbe.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a1",
+    "url_name": "latron_prime_set"
+  },
+  {
+    "item_name": "LEX PRIME SET",
+    "thumb": "icons/en/thumbs/Lex_Prime_Set.13776cf63dfd68968067b517184a6ac0.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a2",
+    "url_name": "lex_prime_set"
+  },
+  {
+    "item_name": "LOKI PRIME SET",
+    "thumb": "icons/en/thumbs/Loki_Prime_Set.abc05c280f92196bcb688643873fbf95.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a3",
+    "url_name": "loki_prime_set"
+  },
+  {
+    "item_name": "NOVA PRIME SET",
+    "thumb": "icons/en/thumbs/Nova_Prime_Set.639a9222e1cb351cd6dd09ef28155ef0.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a5",
+    "url_name": "nova_prime_set"
+  },
+  {
+    "item_name": "NYX PRIME SET",
+    "thumb": "icons/en/thumbs/Nyx_Prime_Set.fd41c04c9e9bcc7e0e6963914f68f880.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a6",
+    "url_name": "nyx_prime_set"
+  },
+  {
+    "item_name": "ODONATA PRIME SET",
+    "thumb": "icons/en/thumbs/Odonata_Prime_Set.9087f5267b49dee37c38d36f57387753.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a7",
+    "url_name": "odonata_prime_set"
+  },
+  {
+    "item_name": "SOMA PRIME SET",
+    "thumb": "icons/en/thumbs/Soma_Prime_Set.1bf4937a6c2106c373cffeb93b1c87e0.128x128.png",
+    "id": "56783f24cbfa8f0432dd89ae",
+    "url_name": "soma_prime_set"
+  },
+  {
+    "item_name": "SARYN PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "56c3bbd55d2f0202da32e93b",
+    "url_name": "saryn_prime_blueprint"
+  },
+  {
+    "item_name": "SARYN PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "56c3bbdb5d2f0202da32e93c",
+    "url_name": "saryn_prime_neuroptics"
+  },
+  {
+    "item_name": "SARYN PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "56c3bbe05d2f0202da32e93d",
+    "url_name": "saryn_prime_systems"
+  },
+  {
+    "item_name": "SARYN PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "56c3bbe45d2f0202da32e93e",
+    "url_name": "saryn_prime_chassis"
+  },
+  {
+    "item_name": "NIKANA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "56c3bbee5d2f0202da32e940",
+    "url_name": "nikana_prime_blueprint"
+  },
+  {
+    "item_name": "NIKANA PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "56c3bbf45d2f0202da32e941",
+    "url_name": "nikana_prime_blade"
+  },
+  {
+    "item_name": "NIKANA PRIME HILT",
+    "thumb": "sub_icons/hilt_128x128.png",
+    "id": "56c3bbf85d2f0202da32e942",
+    "url_name": "nikana_prime_hilt"
+  },
+  {
+    "item_name": "NIKANA PRIME SET",
+    "thumb": "icons/en/thumbs/Nikana_Prime_Set.2daac0807a52385bfcf62f71075f2221.128x128.png",
+    "id": "56c3bbfc5d2f0202da32e943",
+    "url_name": "nikana_prime_set"
+  },
+  {
+    "item_name": "SPIRA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "56c3bc025d2f0202da32e944",
+    "url_name": "spira_prime_blueprint"
+  },
+  {
+    "item_name": "SPIRA PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "56c3bc0c5d2f0202da32e945",
+    "url_name": "spira_prime_blade"
+  },
+  {
+    "item_name": "SPIRA PRIME POUCH",
+    "thumb": "sub_icons/pouch_128x128.png",
+    "id": "56c3bc115d2f0202da32e946",
+    "url_name": "spira_prime_pouch"
+  },
+  {
+    "item_name": "SPIRA PRIME SET",
+    "thumb": "icons/en/thumbs/Spira_Prime_Set.1a495b1cb31bba268dc7a50f2a4f7134.128x128.png",
+    "id": "56c3bc1c5d2f0202da32e947",
+    "url_name": "spira_prime_set"
+  },
+  {
+    "item_name": "VAUBAN PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "573d0efa336297b2dfca2909",
+    "url_name": "vauban_prime_systems"
+  },
+  {
+    "item_name": "HELIOS PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "58b57068eb26db5c31192117",
+    "url_name": "helios_prime_systems"
+  },
+  {
+    "item_name": "NAMI SKYLA PRIME SET",
+    "thumb": "icons/en/thumbs/Nami_Skyla_Prime_Set.d83bcdd72463d5dd1f78faea07ff02a4.128x128.png",
+    "id": "59a5c2565cd9938cfede7040",
+    "url_name": "nami_skyla_prime_set"
+  },
+  {
+    "item_name": "NAMI SKYLA PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "59a5cd4d5cd9938cfede7041",
+    "url_name": "nami_skyla_prime_blade"
+  },
+  {
+    "item_name": "HYDROID PRIME SET",
+    "thumb": "icons/en/thumbs/Hydroid_Prime_Set.5f1abb4ef137bf0dd41565a913f5232a.128x128.png",
+    "id": "59a48b625cd9938cfede703c",
+    "url_name": "hydroid_prime_set"
+  },
+  {
+    "item_name": "MIRAGE PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "5a2feeb1c2c9e90cbdaa23d2",
+    "url_name": "mirage_prime_systems"
+  },
+  {
+    "item_name": "MIRAGE PRIME SET",
+    "thumb": "icons/en/thumbs/Mirage_Prime_Set.e7f8f484dd6ae6c35f0767fff35a5109.128x128.png",
+    "id": "5a2feeb2c2c9e90cbdaa23d3",
+    "url_name": "mirage_prime_set"
+  },
+  {
+    "item_name": "MIRAGE PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5a2feeb2c2c9e90cbdaa23d4",
+    "url_name": "mirage_prime_blueprint"
+  },
+  {
+    "item_name": "MIRAGE PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "5a2feeb2c2c9e90cbdaa23d5",
+    "url_name": "mirage_prime_chassis"
+  },
+  {
+    "item_name": "MIRAGE PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "5a2feeb2c2c9e90cbdaa23d6",
+    "url_name": "mirage_prime_neuroptics"
+  },
+  {
+    "item_name": "AKBOLTO PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "5a311f83c2c9e90dfff475d4",
+    "url_name": "akbolto_prime_receiver"
+  },
+  {
+    "item_name": "AKBOLTO PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5a311f83c2c9e90dfff475d5",
+    "url_name": "akbolto_prime_blueprint"
+  },
+  {
+    "item_name": "KOGAKE PRIME BOOT",
+    "thumb": "sub_icons/boot_128x128.png",
+    "id": "5a311f84c2c9e90dfff475e4",
+    "url_name": "kogake_prime_boot"
+  },
+  {
+    "item_name": "KOGAKE PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5a311f84c2c9e90dfff475e5",
+    "url_name": "kogake_prime_blueprint"
+  },
+  {
+    "item_name": "KOGAKE PRIME SET",
+    "thumb": "icons/en/thumbs/Kogake_Prime_Set.456b865463108d6f6ff51da978f839cd.128x128.png",
+    "id": "5a311f84c2c9e90dfff475f0",
+    "url_name": "kogake_prime_set"
+  },
+  {
+    "item_name": "AKBOLTO PRIME SET",
+    "thumb": "icons/en/thumbs/Akbolto_Prime_Set.fdb7b0be60ed776a1ba1d800d7cda22b.128x128.png",
+    "id": "5a311f84c2c9e90dfff475f1",
+    "url_name": "akbolto_prime_set"
+  },
+  {
+    "item_name": "AKBOLTO PRIME LINK",
+    "thumb": "sub_icons/link_128x128.png",
+    "id": "5a311f84c2c9e90dfff475f3",
+    "url_name": "akbolto_prime_link"
+  },
+  {
+    "item_name": "KOGAKE PRIME GAUNTLET",
+    "thumb": "sub_icons/gauntlet_128x128.png",
+    "id": "5a311f85c2c9e90dfff475f6",
+    "url_name": "kogake_prime_gauntlet"
+  },
+  {
+    "item_name": "AKBOLTO PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "5a311f85c2c9e90dfff475f7",
+    "url_name": "akbolto_prime_barrel"
+  },
+  {
+    "item_name": "ZEPHYR PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "5ab1570db2b6a8044d5137c1",
+    "url_name": "zephyr_prime_neuroptics"
+  },
+  {
+    "item_name": "ZEPHYR PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5ab1570db2b6a8044d5137c2",
+    "url_name": "zephyr_prime_blueprint"
+  },
+  {
+    "item_name": "ZEPHYR PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "5ab1570db2b6a8044d5137c3",
+    "url_name": "zephyr_prime_chassis"
+  },
+  {
+    "item_name": "ZEPHYR PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "5ab1570db2b6a8044d5137c4",
+    "url_name": "zephyr_prime_systems"
+  },
+  {
+    "item_name": "ZEPHYR PRIME SET",
+    "thumb": "icons/en/thumbs/Zephyr_Prime_Set.4ffc19dd100b3c182beef5f1ef3d337e.128x128.png",
+    "id": "5ab1570db2b6a8044d5137c5",
+    "url_name": "zephyr_prime_set"
+  },
+  {
+    "item_name": "TIBERON PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5ab167b7b2b6a80475780fab",
+    "url_name": "tiberon_prime_blueprint"
+  },
+  {
+    "item_name": "KRONEN PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5ab167b7b2b6a80475780fad",
+    "url_name": "kronen_prime_blueprint"
+  },
+  {
+    "item_name": "TIBERON PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "5ab167b7b2b6a80475780fb1",
+    "url_name": "tiberon_prime_barrel"
+  },
+  {
+    "item_name": "KRONEN PRIME SET",
+    "thumb": "icons/en/thumbs/Kronen_Prime_Set.09023145e06199878b94a9c664e95ce7.128x128.png",
+    "id": "5ab167b7b2b6a80475780fb3",
+    "url_name": "kronen_prime_set"
+  },
+  {
+    "item_name": "KRONEN PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "5ab167b7b2b6a80475780fb5",
+    "url_name": "kronen_prime_handle"
+  },
+  {
+    "item_name": "TIBERON PRIME STOCK",
+    "thumb": "sub_icons/stock_128x128.png",
+    "id": "5ab167b8b2b6a80475780fb8",
+    "url_name": "tiberon_prime_stock"
+  },
+  {
+    "item_name": "TIBERON PRIME SET",
+    "thumb": "icons/en/thumbs/Tiberon_Prime_Set.53f3cf1c68314c0555fbb7020d01f001.128x128.png",
+    "id": "5ab167b8b2b6a80475780fc0",
+    "url_name": "tiberon_prime_set"
+  },
+  {
+    "item_name": "TIBERON PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "5ab167b8b2b6a80475780fc6",
+    "url_name": "tiberon_prime_receiver"
+  },
+  {
+    "item_name": "KRONEN PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "5ab167b9b2b6a80475780fd1",
+    "url_name": "kronen_prime_blade"
+  },
+  {
+    "item_name": "DESTREZA PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "5b2985e0eb069f04ea65b0d8",
+    "url_name": "destreza_prime_blade"
+  },
+  {
+    "item_name": "PYRANA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5b2985e1eb069f04ea65b0ea",
+    "url_name": "pyrana_prime_blueprint"
+  },
+  {
+    "item_name": "PYRANA PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "5b2985e1eb069f04ea65b0ee",
+    "url_name": "pyrana_prime_receiver"
+  },
+  {
+    "item_name": "PYRANA PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "5b2985e1eb069f04ea65b0f3",
+    "url_name": "pyrana_prime_barrel"
+  },
+  {
+    "item_name": "DESTREZA PRIME SET",
+    "thumb": "icons/en/thumbs/Destreza_Prime_Set.b1a1cc461a2cfcf9998f0588c8e932a4.128x128.png",
+    "id": "5b2985e2eb069f04ea65b0f6",
+    "url_name": "destreza_prime_set"
+  },
+  {
+    "item_name": "PYRANA PRIME SET",
+    "thumb": "icons/en/thumbs/Pyrana_Prime_Set.006fc1f35a3662cb6d84ce6a7f63cd9e.128x128.png",
+    "id": "5b2985e3eb069f04ea65b0fa",
+    "url_name": "pyrana_prime_set"
+  },
+  {
+    "item_name": "DESTREZA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5b2985e3eb069f04ea65b0fb",
+    "url_name": "destreza_prime_blueprint"
+  },
+  {
+    "item_name": "DESTREZA PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "5b2985e3eb069f04ea65b0fd",
+    "url_name": "destreza_prime_handle"
+  },
+  {
+    "item_name": "LIMBO PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5b2987aaeb069f0536234276",
+    "url_name": "limbo_prime_blueprint"
+  },
+  {
+    "item_name": "ASH PRIME SET",
+    "thumb": "icons/en/thumbs/Ash_Prime_Set.9f3f82bee82a9741531857cf76eb6594.128x128.png",
+    "id": "56783f24cbfa8f0432dd898f",
+    "url_name": "ash_prime_set"
+  },
+  {
+    "item_name": "LIMBO PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "5b2987abeb069f0536234277",
+    "url_name": "limbo_prime_neuroptics"
+  },
+  {
+    "item_name": "LIMBO PRIME SET",
+    "thumb": "icons/en/thumbs/Limbo_Prime_Set.7bfbc70bd8438594d45a47fba260b174.128x128.png",
+    "id": "5b2987abeb069f0536234278",
+    "url_name": "limbo_prime_set"
+  },
+  {
+    "item_name": "LIMBO PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "5b2987abeb069f0536234279",
+    "url_name": "limbo_prime_systems"
+  },
+  {
+    "item_name": "LIMBO PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "5b2987abeb069f053623427a",
+    "url_name": "limbo_prime_chassis"
+  },
+  {
+    "item_name": "CHROMA PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "5ba9f2014567de01415f6387",
+    "url_name": "chroma_prime_systems"
+  },
+  {
+    "item_name": "CHROMA PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "5ba9f2024567de01415f6388",
+    "url_name": "chroma_prime_chassis"
+  },
+  {
+    "item_name": "CHROMA PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "5ba9f2024567de01415f6389",
+    "url_name": "chroma_prime_neuroptics"
+  },
+  {
+    "item_name": "CHROMA PRIME SET",
+    "thumb": "icons/en/thumbs/Chroma_Prime_Set.746ea1c1556aa60f94f0c2399946baaf.128x128.png",
+    "id": "5ba9f2034567de01415f638b",
+    "url_name": "chroma_prime_set"
+  },
+  {
+    "item_name": "CHROMA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5ba9f2054567de01415f6390",
+    "url_name": "chroma_prime_blueprint"
+  },
+  {
+    "item_name": "RUBICO PRIME SET",
+    "thumb": "icons/en/thumbs/Rubico_Prime_Set.2071211bc2436d4e768dbb61f98f6efd.128x128.png",
+    "id": "5baa8bbe4567de01ac283491",
+    "url_name": "rubico_prime_set"
+  },
+  {
+    "item_name": "GRAM PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "5baa8bbf4567de01ac283492",
+    "url_name": "gram_prime_handle"
+  },
+  {
+    "item_name": "RUBICO PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "5baa8bbf4567de01ac283493",
+    "url_name": "rubico_prime_barrel"
+  },
+  {
+    "item_name": "RUBICO PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "5baa8bbf4567de01ac283494",
+    "url_name": "rubico_prime_receiver"
+  },
+  {
+    "item_name": "GRAM PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5baa8bbf4567de01ac283495",
+    "url_name": "gram_prime_blueprint"
+  },
+  {
+    "item_name": "GRAM PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "5baa8bbf4567de01ac283496",
+    "url_name": "gram_prime_blade"
+  },
+  {
+    "item_name": "GRAM PRIME SET",
+    "thumb": "icons/en/thumbs/Gram_Prime_Set.678c245a88b54368ae895b73b6987231.128x128.png",
+    "id": "5baa8bbf4567de01ac283497",
+    "url_name": "gram_prime_set"
+  },
+  {
+    "item_name": "RUBICO PRIME STOCK",
+    "thumb": "sub_icons/stock_128x128.png",
+    "id": "5baa8bbf4567de01ac283498",
+    "url_name": "rubico_prime_stock"
+  },
+  {
+    "item_name": "RUBICO PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5baa8bbf4567de01ac283499",
+    "url_name": "rubico_prime_blueprint"
+  },
+  {
+    "item_name": "AKVASTO PRIME SET",
+    "thumb": "icons/en/thumbs/Akvasto_Prime_Set.029887bbd387510ffec1debd81f65dab.128x128.png",
+    "id": "5bebf1713ffcc704caf38cf4",
+    "url_name": "akvasto_prime_set"
+  },
+  {
+    "item_name": "AKVASTO PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5bebf1713ffcc704caf38cf6",
+    "url_name": "akvasto_prime_blueprint"
+  },
+  {
+    "item_name": "AKVASTO PRIME LINK",
+    "thumb": "sub_icons/link_128x128.png",
+    "id": "5bebf1713ffcc704caf38cf7",
+    "url_name": "akvasto_prime_link"
+  },
+  {
+    "item_name": "MESA PRIME SET",
+    "thumb": "icons/en/thumbs/Mesa_Prime_Set.34d67af54de052f6de1d5ae64ed40197.128x128.png",
+    "id": "5c182b739603780081b09a53",
+    "url_name": "mesa_prime_set"
+  },
+  {
+    "item_name": "MESA PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "5c182b739603780081b09a54",
+    "url_name": "mesa_prime_neuroptics"
+  },
+  {
+    "item_name": "MESA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5c182b739603780081b09a55",
+    "url_name": "mesa_prime_blueprint"
+  },
+  {
+    "item_name": "MESA PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "5c182b749603780081b09a56",
+    "url_name": "mesa_prime_systems"
+  },
+  {
+    "item_name": "MESA PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "5c182b749603780081b09a57",
+    "url_name": "mesa_prime_chassis"
+  },
+  {
+    "item_name": "AKJAGARA PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "5c196fac96037800ddadac12",
+    "url_name": "akjagara_prime_barrel"
+  },
+  {
+    "item_name": "AKJAGARA PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5c196fad96037800ddadac13",
+    "url_name": "akjagara_prime_blueprint"
+  },
+  {
+    "item_name": "REDEEMER PRIME BLADE",
+    "thumb": "sub_icons/blade_128x128.png",
+    "id": "5c196fad96037800ddadac14",
+    "url_name": "redeemer_prime_blade"
+  },
+  {
+    "item_name": "AKJAGARA PRIME SET",
+    "thumb": "icons/en/thumbs/Akjagara_Prime_Set.d3227deeb0bd5a52de99a4534a54b2b5.128x128.png",
+    "id": "5c196fae96037800ddadac15",
+    "url_name": "akjagara_prime_set"
+  },
+  {
+    "item_name": "REDEEMER PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5c196fae96037800ddadac16",
+    "url_name": "redeemer_prime_blueprint"
+  },
+  {
+    "item_name": "REDEEMER PRIME SET",
+    "thumb": "icons/en/thumbs/Redeemer_Prime_Set.92fcede37c1ab66d22a2287dc2334731.128x128.png",
+    "id": "5c196faf96037800ddadac17",
+    "url_name": "redeemer_prime_set"
+  },
+  {
+    "item_name": "AKJAGARA PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "5c196fb096037800ddadac18",
+    "url_name": "akjagara_prime_receiver"
+  },
+  {
+    "item_name": "REDEEMER PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "5c196fb096037800ddadac19",
+    "url_name": "redeemer_prime_handle"
+  },
+  {
+    "item_name": "AKJAGARA PRIME LINK",
+    "thumb": "sub_icons/link_128x128.png",
+    "id": "5c196fb496037800ddadac1a",
+    "url_name": "akjagara_prime_link"
+  },
+  {
+    "item_name": "TIPEDO PRIME HANDLE",
+    "thumb": "sub_icons/handle_128x128.png",
+    "id": "5ca2866ffc2db2035eae059a",
+    "url_name": "tipedo_prime_handle"
+  },
+  {
+    "item_name": "STRADAVAR PRIME BARREL",
+    "thumb": "sub_icons/barrel_128x128.png",
+    "id": "5ca2866ffc2db2035eae059b",
+    "url_name": "stradavar_prime_barrel"
+  },
+  {
+    "item_name": "STRADAVAR PRIME SET",
+    "thumb": "icons/en/thumbs/Stradavar_Prime_Set.57c042a30996514288dfd70f2ce267ca.128x128.png",
+    "id": "5ca2866ffc2db2035eae059c",
+    "url_name": "stradavar_prime_set"
+  },
+  {
+    "item_name": "TIPEDO PRIME ORNAMENT",
+    "thumb": "sub_icons/ornament_128x128.png",
+    "id": "5ca28670fc2db2035eae059d",
+    "url_name": "tipedo_prime_ornament"
+  },
+  {
+    "item_name": "EQUINOX PRIME SET",
+    "thumb": "icons/en/thumbs/Equinox_Prime_Set.1163c3dad7a8ffce02af7d475fc0ccd4.128x128.png",
+    "id": "5ca28670fc2db2035eae059e",
+    "url_name": "equinox_prime_set"
+  },
+  {
+    "item_name": "TIPEDO PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5ca28670fc2db2035eae059f",
+    "url_name": "tipedo_prime_blueprint"
+  },
+  {
+    "item_name": "EQUINOX PRIME SYSTEMS",
+    "thumb": "sub_icons/systems_128x128.png",
+    "id": "5ca28670fc2db2035eae05a0",
+    "url_name": "equinox_prime_systems"
+  },
+  {
+    "item_name": "EQUINOX PRIME CHASSIS",
+    "thumb": "sub_icons/chassis_128x128.png",
+    "id": "5ca28670fc2db2035eae05a1",
+    "url_name": "equinox_prime_chassis"
+  },
+  {
+    "item_name": "TIPEDO PRIME SET",
+    "thumb": "icons/en/thumbs/Tipedo_Prime_Set.fd4fdcee6ab035eddce9a802ff091cfd.128x128.png",
+    "id": "5ca28670fc2db2035eae05a2",
+    "url_name": "tipedo_prime_set"
+  },
+  {
+    "item_name": "STRADAVAR PRIME RECEIVER",
+    "thumb": "sub_icons/receiver_128x128.png",
+    "id": "5ca28670fc2db2035eae05a3",
+    "url_name": "stradavar_prime_receiver"
+  },
+  {
+    "item_name": "STRADAVAR PRIME STOCK",
+    "thumb": "sub_icons/stock_128x128.png",
+    "id": "5ca28670fc2db2035eae05a4",
+    "url_name": "stradavar_prime_stock"
+  },
+  {
+    "item_name": "EQUINOX PRIME NEUROPTICS",
+    "thumb": "sub_icons/neuroptics_128x128.png",
+    "id": "5ca28670fc2db2035eae05a5",
+    "url_name": "equinox_prime_neuroptics"
+  },
+  {
+    "item_name": "EQUINOX PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5ca28670fc2db2035eae05a6",
+    "url_name": "equinox_prime_blueprint"
+  },
+  {
+    "item_name": "STRADAVAR PRIME BLUEPRINT",
+    "thumb": "sub_icons/blueprint_128x128.png",
+    "id": "5ca28670fc2db2035eae05a7",
+    "url_name": "stradavar_prime_blueprint"
+  }
+]

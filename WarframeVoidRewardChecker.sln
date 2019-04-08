@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarframeVoidRewardChecker", "WarframeVoidRewardChecker\WarframeVoidRewardChecker.csproj", "{DBD8F54A-2103-42DE-B889-39007A4663AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBD8F54A-2103-42DE-B889-39007A4663AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBD8F54A-2103-42DE-B889-39007A4663AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBD8F54A-2103-42DE-B889-39007A4663AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBD8F54A-2103-42DE-B889-39007A4663AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DADB0650-9B43-4EAD-8E6D-3410F4EA9C96}
+	EndGlobalSection
+EndGlobal
