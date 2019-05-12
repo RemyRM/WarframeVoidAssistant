@@ -20,7 +20,7 @@ namespace WarframeVoidRewardChecker
             //First we want to read in the list containing all viable prime items
             WarframeMarketApi.ReadWarframeMarketAllItemsJson();
 
-            Application.Run(new Form1());
+            Application.Run(new VoidChecker());
         }
     }
 }
