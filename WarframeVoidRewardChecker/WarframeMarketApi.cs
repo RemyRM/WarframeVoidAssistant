@@ -14,9 +14,12 @@ namespace WarframeVoidRewardChecker
 {
     public static class WarframeMarketApi
     {
+        //API docs: https://docs.google.com/document/d/1121cjBNN4BeZdMBGil6Qbuqse-sWpEXPpitQH5fb_Fo/edit#heading=h.irwashnbboeo
         readonly static string apiCallAllItems = @"https://api.warframe.market/v1/items";
         readonly static string JSONpath = @"D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\Resources\Files\";
         readonly static string primeJsonFileName = "PrimeItems.json";
+
+        readonly static string warframeMarketBaseUrl = @"https://warframe.market/static/assets/";
 
         static List<WarframeMarketItemClass> allPrimeItems = new List<WarframeMarketItemClass>();
 
@@ -59,6 +62,7 @@ namespace WarframeVoidRewardChecker
                 if (item.item_name.Contains("Prime") && !item.item_name.Contains("Primed") &&
                     !item.item_name.Substring(item.item_name.Length - 3, 3).Equals("Set"))
                 {
+                    item.thumb = warframeMarketBaseUrl + item.thumb;
                     item.item_name = item.item_name.ToUpper();
                     allPrimeItems.Add(item);
                 }
