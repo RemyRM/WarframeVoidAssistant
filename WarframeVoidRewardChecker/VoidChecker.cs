@@ -171,8 +171,8 @@ namespace WarframeVoidRewardChecker
             int randNum = rand.Next(0, 10000);
             string path = @"D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\Resources\Images\Screenshot_" + randNum + ".png";
 
-            bmpScreenshot = ToGrayScale(bmpScreenshot);
-            bmpScreenshot = RemoveBackground(bmpScreenshot);
+            //bmpScreenshot = ToGrayScale(bmpScreenshot);
+            //bmpScreenshot = RemoveBackground(bmpScreenshot);
 
             bmpScreenshot.Save(path, System.Drawing.Imaging.ImageFormat.Png);
 
