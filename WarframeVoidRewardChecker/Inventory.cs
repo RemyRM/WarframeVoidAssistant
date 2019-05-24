@@ -1,19 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Serialization;
 
 namespace WarframeVoidRewardChecker
 {
     public partial class Inventory : Form
     {
+        readonly static string JSONpath = @"D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\Resources\Files\";
+        readonly static string inventorySaveFile = @"InventorySaveData.json";
+
         static List<WarframeMarketItemClass> allPrimeItems;
         static List<InventoryEntry> inventory = new List<InventoryEntry>();
 
@@ -34,20 +36,99 @@ namespace WarframeVoidRewardChecker
         public Inventory()
         {
             InitializeComponent();
+            MainItemPanel.AutoScroll = true;
 
             allPrimeItems = WarframeMarketApi.GetAllPrimeItems();
 
-            MainItemPanel.AutoScroll = true;
-            for (int i = 0; i < allPrimeItems.Count; i++)
+            if (File.Exists(JSONpath + inventorySaveFile))
+            {
+                LoadInventoryData();
+            }
+            else
+            {
+                SaveInventoryData(true);
+            }
+        }
+
+        /// <summary>
+        /// If no inventory save file exists we create a new one, and fill it with the base value of having everything false
+        /// </summary>
+        private void SaveInventoryData(bool createNewFile)
+        {
+            if (createNewFile)
+            {
+                //Create an inventory entry for each prime item
+                for (int i = 0; i < allPrimeItems.Count; i++)
+                {
+                    inventory.Add(new InventoryEntry(allPrimeItems[i].item_name, false, false));
+                }
+            }
+
+            DefaultContractResolver contractResolver = new DefaultContractResolver
+            {
+                NamingStrategy = new CamelCaseNamingStrategy
+                {
+                    OverrideSpecifiedNames = false
+                }
+            };
+
+            string jsonNoFormatting = JsonConvert.SerializeObject(inventory, new JsonSerializerSettings
+            {
+                ContractResolver = contractResolver,
+                Formatting = Formatting.Indented
+            });
+
+            //Write the inventory to a JSON file
+            using (StreamWriter sw = new StreamWriter(JSONpath + inventorySaveFile))
+            {
+                sw.Write(jsonNoFormatting);
+            }
+            if (!File.Exists(JSONpath + inventorySaveFile))
+            {
+                Console.WriteLine("Error creating file. File not found");
+            }
+
+            FillInventoryPanel();
+        }
+
+        /// <summary>
+        /// Load in the inventory save file
+        /// </summary>
+        private void LoadInventoryData()
+        {
+            string rawJson = "";
+            using (StreamReader reader = new StreamReader(JSONpath + inventorySaveFile))
+            {
+                rawJson = reader.ReadToEnd();
+            }
+
+            JArray jsonResult = JArray.Parse(rawJson);
+            List<JToken> filteredResults = jsonResult.Children().ToList();
+            foreach (JToken token in filteredResults)
+            {
+                InventoryEntry item = token.ToObject<InventoryEntry>();
+                inventory.Add(item);
+            }
+
+            FillInventoryPanel();
+        }
+
+        /// <summary>
+        /// Fill the main panel with the item entries
+        /// </summary>
+        private void FillInventoryPanel()
+        {
+            for (int i = 0; i < inventory.Count; i++)
             {
                 int yOffset = startY + (i * itemBoxHeight);
-                inventory.Add(new InventoryEntry(allPrimeItems[i].item_name, false, false));
 
+                //Create a sub panel that contains the name and checkboxes
                 Panel SubItemPanel = new Panel()
                 {
                     Location = new Point(0, yOffset),
                     Width = 660,
                     Height = itemBoxHeight,
+                    Name = inventory[i].Name
                 };
 
                 if (i % 2 == 0)
@@ -55,6 +136,7 @@ namespace WarframeVoidRewardChecker
                     SubItemPanel.BackColor = Color.WhiteSmoke;
                 }
 
+                //Create a label containing the item name
                 LinkLabel itemLabel = new LinkLabel()
                 {
                     AutoSize = true,
@@ -67,23 +149,50 @@ namespace WarframeVoidRewardChecker
                 };
                 itemLabel.Click += ItemLabel_Click;
 
+                //create a checkbox for wether or not the bp has been crafted
                 CheckBox craftedBPCheckbox = new CheckBox()
                 {
                     Location = new Point(305, 5),
+                    Checked = inventory[i].HasCraftedBlueprint
                 };
+                craftedBPCheckbox.CheckedChanged += CraftedBPCheckbox_CheckedChanged;
 
+                //create a checkbox for wether or not the item itself was crafted
                 CheckBox craftedFinalItemCheckbox = new CheckBox()
                 {
                     Location = new Point(525, 5),
+                    Checked = inventory[i].HasCraftedFinalItem
                 };
+                craftedFinalItemCheckbox.CheckedChanged += CraftedFinalItemCheckbox_CheckedChanged;
 
-
+                //add the name and checkboxes to the sub panel 
                 SubItemPanel.Controls.Add(itemLabel);
                 SubItemPanel.Controls.Add(craftedBPCheckbox);
                 SubItemPanel.Controls.Add(craftedFinalItemCheckbox);
 
+                //add the panel to the main form
                 MainItemPanel.Controls.Add(SubItemPanel);
             }
+        }
+
+        /// <summary>
+        /// When the value of the item crafted checkbox changed we update the inventoryEntry accordingly
+        /// </summary>
+        private void CraftedFinalItemCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox cBox = (CheckBox)sender;
+            int index = inventory.IndexOf(inventory.FirstOrDefault(o => o.Name.Equals(cBox.Parent.Name)));
+            inventory[index].SetHasCraftedItem(cBox.Checked);
+        }
+
+        /// <summary>
+        /// When the value of the BP crafted checkbox changed we update the inventoryEntry accordingly
+        /// </summary>
+        private void CraftedBPCheckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            CheckBox cBox = (CheckBox)sender;
+            int index = inventory.IndexOf(inventory.FirstOrDefault(o => o.Name.Equals(cBox.Parent.Name)));
+            inventory[index].SetHasCraftedBP(cBox.Checked);
         }
 
         /// <summary>
@@ -111,25 +220,6 @@ namespace WarframeVoidRewardChecker
             }
 
             itemImageLabel.Image = thumbnail;
-        }
-
-        /// <summary>
-        /// Gets called when the form gets loaded in
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void Inventory_Load(object sender, EventArgs e)
-        {
-            Control control = (Control)sender;
-
-            CreateHeaderLabels();
-
-            //Set the position and size of the main panel in which the items are listed
-            MainItemPanel.Location = new Point(10, 75);
-            MainItemPanel.Height = control.Size.Height - mainPanelHeightOffset;
-            MainItemPanel.Width = 700;
-
-            CreateItemInformationPanel();
         }
 
         /// <summary>
@@ -225,6 +315,33 @@ namespace WarframeVoidRewardChecker
             control.Controls.Add(itemID);
             itemIDLabel = itemID;
         }
+
+        #region inventory_listeners
+        /// <summary>
+        /// Gets called when the form gets loaded in
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Inventory_Load(object sender, EventArgs e)
+        {
+            Control control = (Control)sender;
+
+            CreateHeaderLabels();
+
+            //Set the position and size of the main panel in which the items are listed
+            MainItemPanel.Location = new Point(10, 75);
+            MainItemPanel.Height = control.Size.Height - mainPanelHeightOffset;
+            MainItemPanel.Width = 700;
+
+            CreateItemInformationPanel();
+        }
+
+
+        private void Inventory_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SaveInventoryData(false);
+        }
+
         /// <summary>
         /// Every time the window gets resized
         /// </summary>
@@ -244,19 +361,35 @@ namespace WarframeVoidRewardChecker
                 MainItemPanel.Width = 700;
             }
         }
+        #endregion
     }
 
     internal class InventoryEntry
     {
-        private string name;
-        private bool hasCraftedBlueprint;
-        private bool hasCraftedFinalItem;
+        public readonly string Name;
+        public bool HasCraftedBlueprint { get; private set; }
+        public bool HasCraftedFinalItem { get; private set; }
 
         public InventoryEntry(string name, bool hasCraftedBlueprint, bool hasCraftedFinalItem)
         {
-            this.name = name;
-            this.hasCraftedBlueprint = hasCraftedBlueprint;
-            this.hasCraftedFinalItem = hasCraftedFinalItem;
+            this.Name = name;
+            this.HasCraftedBlueprint = hasCraftedBlueprint;
+            this.HasCraftedFinalItem = hasCraftedFinalItem;
+        }
+
+        public string GetName()
+        {
+            return Name;
+        }
+
+        public void SetHasCraftedBP(bool value)
+        {
+            HasCraftedBlueprint = value;
+        }
+
+        public void SetHasCraftedItem(bool value)
+        {
+            HasCraftedFinalItem = value;
         }
     }
 }

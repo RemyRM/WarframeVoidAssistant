@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
@@ -36,9 +33,13 @@ namespace WarframeVoidRewardChecker
             if (CheckForPrimedItemsJson())
                 return;
 
+            //Create a call to the warframe market API to get a list of all the items
             WebRequest apiItemRequest = WebRequest.Create(apiCallAllItems);
             apiItemRequest.Credentials = CredentialCache.DefaultCredentials;
+
+            //Get the response from the API
             HttpWebResponse response = (HttpWebResponse)apiItemRequest.GetResponse();
+
             Console.WriteLine("Response status: " + response.StatusCode);
             if (response.StatusCode != HttpStatusCode.OK)
             {
@@ -47,6 +48,7 @@ namespace WarframeVoidRewardChecker
             }
 
             string rawItemJson = "";
+            //Read the actual data from the response
             using (StreamReader reader = new StreamReader(response.GetResponseStream()))
             {
                 rawItemJson = reader.ReadToEnd();
@@ -124,13 +126,6 @@ namespace WarframeVoidRewardChecker
                 {
                     OverrideSpecifiedNames = false
                 }
-            };
-
-
-            JsonSerializer serializer = new JsonSerializer
-            {
-                ContractResolver = contractResolver,
-                NullValueHandling = NullValueHandling.Include
             };
 
             string jsonNoFormatting = JsonConvert.SerializeObject(allPrimeItems, new JsonSerializerSettings

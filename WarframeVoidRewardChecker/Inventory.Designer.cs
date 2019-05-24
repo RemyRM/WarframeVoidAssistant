@@ -49,6 +49,7 @@
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "Inventory";
             this.Text = "Inventory";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Inventory_FormClosing);
             this.Load += new System.EventHandler(this.Inventory_Load);
             this.Resize += new System.EventHandler(this.Inventory_Resize);
             this.ResumeLayout(false);
