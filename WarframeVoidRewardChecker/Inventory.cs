@@ -18,12 +18,13 @@ namespace WarframeVoidRewardChecker
 
         static List<WarframeItem> allPrimeItems;
         static List<List<WarframeItem>> allPrimeSets;
-        static List<InventoryEntry> inventory = new List<InventoryEntry>();
+
+        static List<InventorySetEntry> setsInventory = new List<InventorySetEntry>();
+        //static List<InventoryItemEntry> inventory = new List<InventoryItemEntry>();
 
         static Font itemEntryFont = new Font("Arial", 11);
         static Font headerFont = new Font("Arial", 12, FontStyle.Bold);
 
-        static int startY = 0;
         static int itemBoxHeight = 30;
 
         static int mainPanelHeightOffset = 125;
@@ -56,14 +57,20 @@ namespace WarframeVoidRewardChecker
         /// <summary>
         /// If no inventory save file exists we create a new one, and fill it with the base value of having everything false
         /// </summary>
-        private void SaveInventoryData(bool createNewFile)
+        private void SaveInventoryData(bool createNewFile, bool isClosing = false)
         {
             if (createNewFile)
             {
-                //Create an inventory entry for each prime item
-                for (int i = 0; i < allPrimeItems.Count; i++)
+                for (int i = 0; i < allPrimeSets.Count; i++)
                 {
-                    inventory.Add(new InventoryEntry(allPrimeItems[i].item_name, false, false));
+                    InventoryItemEntry[] itemEntry = new InventoryItemEntry[allPrimeSets[i].Count - 1];
+
+                    for (int j = 1; j < allPrimeSets[i].Count; j++)
+                    {
+                        itemEntry[j - 1] = new InventoryItemEntry(allPrimeSets[i][j].item_name, false);
+                    }
+                    InventorySetEntry setEntry = new InventorySetEntry(allPrimeSets[i][0].item_name, false, itemEntry);
+                    setsInventory.Add(setEntry);
                 }
             }
 
@@ -75,7 +82,7 @@ namespace WarframeVoidRewardChecker
                 }
             };
 
-            string jsonNoFormatting = JsonConvert.SerializeObject(inventory, new JsonSerializerSettings
+            string jsonNoFormatting = JsonConvert.SerializeObject(setsInventory, new JsonSerializerSettings
             {
                 ContractResolver = contractResolver,
                 Formatting = Formatting.Indented
@@ -91,7 +98,10 @@ namespace WarframeVoidRewardChecker
                 Console.WriteLine("Error creating file. File not found");
             }
 
-            //FillInventoryPanel();
+            if (!isClosing)
+            {
+                FillInventoryPanel();
+            }
         }
 
         /// <summary>
@@ -109,8 +119,8 @@ namespace WarframeVoidRewardChecker
             List<JToken> filteredResults = jsonResult.Children().ToList();
             foreach (JToken token in filteredResults)
             {
-                InventoryEntry item = token.ToObject<InventoryEntry>();
-                inventory.Add(item);
+                InventorySetEntry item = token.ToObject<InventorySetEntry>();
+                setsInventory.Add(item);
             }
 
             FillInventoryPanel();
@@ -125,11 +135,16 @@ namespace WarframeVoidRewardChecker
             int nextYOffset = -30;
             for (int i = 0; i < allPrimeSets.Count; i++)
             {
-                //If the item name doesn't match the filter we don't include it
+                ////If the item name doesn't match the filter we don't include it
                 //if (filter != null && !allPrimeSets[i][0].item_name.Contains(filter))
                 //{
-                //    Console.WriteLine("Not found in filter, continue.");
+                //    //Console.WriteLine("Not found in filter, continue.");
                 //    continue;
+                //}
+                //else if (filter != null && allPrimeSets[i][0].item_name.Contains(filter))
+                //{
+                //    MainItemPanel.Controls.Clear();
+                //    Console.WriteLine("Found {0} using filter {1}", allPrimeSets[i][0].item_name, filter);
                 //}
 
                 Panel itemSetPanel = new Panel()
@@ -138,10 +153,8 @@ namespace WarframeVoidRewardChecker
                     Width = itemPanelWidth,
                     Height = itemBoxHeight,
                     Location = new Point(0, nextYOffset),
-                    //BackColor = Color.Magenta
                 };
                 MainItemPanel.Controls.Add(itemSetPanel);
-                Console.WriteLine("Added main set panel {0} at {1}", itemSetPanel.Name, itemSetPanel.Location);
 
                 int itemYOffset = 30;
                 int itemXOffset = 15;
@@ -157,15 +170,6 @@ namespace WarframeVoidRewardChecker
                         Location = new Point(0, itemYOffset),
                     };
                     itemSetPanel.Controls.Add(itemPanel);
-
-                    //if (i % 2 == 0)
-                    //{
-                    //    itemPanel.BackColor = Color.White;
-                    //}
-                    //else
-                    //{
-                    //    itemPanel.BackColor = Color.WhiteSmoke;
-                    //}
 
                     //Create a label containing the item name
                     LinkLabel itemLabel = new LinkLabel()
@@ -187,7 +191,7 @@ namespace WarframeVoidRewardChecker
                         CheckBox craftedBPCheckbox = new CheckBox()
                         {
                             Location = new Point(305, 5),
-                            Checked = inventory[i].HasCraftedBlueprint
+                            //Checked = inventory[i].HasCraftedBlueprint
                         };
                         craftedBPCheckbox.CheckedChanged += CraftedBPCheckbox_CheckedChanged;
                         itemPanel.Controls.Add(craftedBPCheckbox);
@@ -197,7 +201,7 @@ namespace WarframeVoidRewardChecker
                     CheckBox craftedFinalItemCheckbox = new CheckBox()
                     {
                         Location = new Point(525, 5),
-                        Checked = inventory[i].HasCraftedFinalItem
+                        //Checked = inventory[i].HasCraftedFinalItem
                     };
                     craftedFinalItemCheckbox.CheckedChanged += CraftedFinalItemCheckbox_CheckedChanged;
                     itemPanel.Controls.Add(craftedFinalItemCheckbox);
@@ -207,66 +211,9 @@ namespace WarframeVoidRewardChecker
                     itemYOffset += itemBoxHeight;
                     nextYOffset += itemBoxHeight;
 
-                    Console.WriteLine("Added subpanel {0} at {1}", itemPanel.Name, itemPanel.Location);
                 }
                 nextYOffset += 10;
             }
-
-            //for (int i = 0; i < inventory.Count; i++)
-            //{
-            //    int yOffset = startY + (i * itemBoxHeight);
-
-            //    //Create a sub panel that contains the name and checkboxes
-            //    Panel SubItemPanel = new Panel()
-            //    {
-            //        Location = new Point(0, yOffset),
-            //        Width = 660,
-            //        Height = itemBoxHeight,
-            //        Name = inventory[i].Name
-            //    };
-
-            //    if (i % 2 == 0)
-            //    {
-            //        SubItemPanel.BackColor = Color.WhiteSmoke;
-            //    }
-
-            //    //Create a label containing the item name
-            //    LinkLabel itemLabel = new LinkLabel()
-            //    {
-            //        AutoSize = true,
-            //        Location = new Point(0, 5),
-            //        Text = allPrimeItems[i].item_name,
-            //        Font = itemEntryFont,
-            //        ActiveLinkColor = Color.Black,
-            //        LinkColor = Color.Black,
-            //        LinkBehavior = LinkBehavior.NeverUnderline
-            //    };
-            //    itemLabel.Click += ItemLabel_Click;
-
-            //    //create a checkbox for wether or not the bp has been crafted
-            //    CheckBox craftedBPCheckbox = new CheckBox()
-            //    {
-            //        Location = new Point(305, 5),
-            //        Checked = inventory[i].HasCraftedBlueprint
-            //    };
-            //    craftedBPCheckbox.CheckedChanged += CraftedBPCheckbox_CheckedChanged;
-
-            //    //create a checkbox for wether or not the item itself was crafted
-            //    CheckBox craftedFinalItemCheckbox = new CheckBox()
-            //    {
-            //        Location = new Point(525, 5),
-            //        Checked = inventory[i].HasCraftedFinalItem
-            //    };
-            //    craftedFinalItemCheckbox.CheckedChanged += CraftedFinalItemCheckbox_CheckedChanged;
-
-            //    //add the name and checkboxes to the sub panel 
-            //    SubItemPanel.Controls.Add(itemLabel);
-            //    SubItemPanel.Controls.Add(craftedBPCheckbox);
-            //    SubItemPanel.Controls.Add(craftedFinalItemCheckbox);
-
-            //    //add the panel to the main form
-            //    MainItemPanel.Controls.Add(SubItemPanel);
-            //}
         }
 
         /// <summary>
@@ -275,8 +222,8 @@ namespace WarframeVoidRewardChecker
         private void CraftedFinalItemCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox cBox = (CheckBox)sender;
-            int index = inventory.IndexOf(inventory.FirstOrDefault(o => o.Name.Equals(cBox.Parent.Name)));
-            inventory[index].SetHasCraftedItem(cBox.Checked);
+            //int index = inventory.IndexOf(inventory.FirstOrDefault(o => o.Name.Equals(cBox.Parent.Name)));
+            //inventory[index].SetHasCraftedItem(cBox.Checked);
         }
 
         /// <summary>
@@ -285,8 +232,8 @@ namespace WarframeVoidRewardChecker
         private void CraftedBPCheckbox_CheckedChanged(object sender, EventArgs e)
         {
             CheckBox cBox = (CheckBox)sender;
-            int index = inventory.IndexOf(inventory.FirstOrDefault(o => o.Name.Equals(cBox.Parent.Name)));
-            inventory[index].SetHasCraftedBP(cBox.Checked);
+            //int index = inventory.IndexOf(inventory.FirstOrDefault(o => o.Name.Equals(cBox.Parent.Name)));
+            //inventory[index].SetHasCraftedBP(cBox.Checked);
         }
 
         /// <summary>
@@ -344,12 +291,35 @@ namespace WarframeVoidRewardChecker
             Label CraftedItemLabel = new Label()
             {
                 Name = "CraftedItemLabel",
-                Text = "Crafted item",
+                Text = "Crafted set",
                 Font = headerFont,
                 Location = new Point(530, 45),
                 AutoSize = true
             };
             Controls.Add(CraftedItemLabel);
+        }
+
+        /// <summary>
+        /// Creates a searchbar to filter the item list
+        /// </summary>
+        private void CreateSearchBar()
+        {
+            TextBox searchField = new TextBox()
+            {
+                Name = "ItemSearchBox",
+                Size = new Size(250, 15),
+                Text = "Type to search",
+                Font = itemEntryFont,
+                Location = new Point(10, 15)
+            };
+            Controls.Add(searchField);
+            searchField.GotFocus += SearchField_Click;
+        }
+
+        private void SearchField_Click(object sender, EventArgs e)
+        {
+            TextBox searchBox = (TextBox)sender;
+            searchBox.Text = "";
         }
 
         /// <summary>
@@ -421,6 +391,7 @@ namespace WarframeVoidRewardChecker
             Control control = (Control)sender;
 
             CreateHeaderLabels();
+            CreateSearchBar();
 
             //Set the position and size of the main panel in which the items are listed
             MainItemPanel.Location = new Point(10, 75);
@@ -430,10 +401,9 @@ namespace WarframeVoidRewardChecker
             CreateItemInformationPanel();
         }
 
-
         private void Inventory_FormClosing(object sender, FormClosingEventArgs e)
         {
-            SaveInventoryData(false);
+            SaveInventoryData(false, true);
         }
 
         /// <summary>
@@ -458,32 +428,39 @@ namespace WarframeVoidRewardChecker
         #endregion
     }
 
-    internal class InventoryEntry
+    internal class InventorySetEntry
+    {
+        public string Name { get; private set; }
+        public bool HasCraftedSet { get; private set; }
+        public InventoryItemEntry[] ItemsInSet { get; private set; }
+
+        public InventorySetEntry(string name, bool hasCraftedset, InventoryItemEntry[] itemsInSet)
+        {
+            this.Name = name;
+            this.HasCraftedSet = HasCraftedSet;
+            this.ItemsInSet = itemsInSet;
+        }
+
+        public void SetHasCraftedSet(bool value)
+        {
+            HasCraftedSet = value;
+        }
+    }
+
+    internal class InventoryItemEntry
     {
         public readonly string Name;
         public bool HasCraftedBlueprint { get; private set; }
-        public bool HasCraftedFinalItem { get; private set; }
 
-        public InventoryEntry(string name, bool hasCraftedBlueprint, bool hasCraftedFinalItem)
+        public InventoryItemEntry(string name, bool hasCraftedBlueprint)
         {
             this.Name = name;
             this.HasCraftedBlueprint = hasCraftedBlueprint;
-            this.HasCraftedFinalItem = hasCraftedFinalItem;
-        }
-
-        public string GetName()
-        {
-            return Name;
         }
 
         public void SetHasCraftedBP(bool value)
         {
             HasCraftedBlueprint = value;
-        }
-
-        public void SetHasCraftedItem(bool value)
-        {
-            HasCraftedFinalItem = value;
         }
     }
 }
