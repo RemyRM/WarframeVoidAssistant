@@ -114,9 +114,9 @@ namespace WarframeVoidRewardChecker
             {
                 rawJson = reader.ReadToEnd();
             }
-
             JArray jsonResult = JArray.Parse(rawJson);
-            List<JToken> filteredResults = jsonResult.Children().ToList();
+            List<JToken> filteredResults = jsonResult.ToList();
+
             foreach (JToken token in filteredResults)
             {
                 InventorySetEntry item = token.ToObject<InventorySetEntry>();
@@ -131,10 +131,11 @@ namespace WarframeVoidRewardChecker
         /// </summary>
         private void FillInventoryPanel(string filter = null)
         {
-            Console.WriteLine("started filling of inventory with {0} sets", allPrimeSets.Count);
-            int nextYOffset = -30;
-            for (int i = 0; i < allPrimeSets.Count; i++)
+            Console.WriteLine("started filling of inventory with {0} sets", setsInventory.Count);
+            int nextYOffset = 0;
+            for (int i = 0; i < setsInventory.Count; i++)
             {
+                int indexI = i;
                 ////If the item name doesn't match the filter we don't include it
                 //if (filter != null && !allPrimeSets[i][0].item_name.Contains(filter))
                 //{
@@ -149,22 +150,50 @@ namespace WarframeVoidRewardChecker
 
                 Panel itemSetPanel = new Panel()
                 {
-                    Name = allPrimeSets[i][0].item_name,
+                    Name = setsInventory[i].Name,
                     Width = itemPanelWidth,
                     Height = itemBoxHeight,
                     Location = new Point(0, nextYOffset),
+                    BackColor = Color.Magenta
                 };
                 MainItemPanel.Controls.Add(itemSetPanel);
 
+                LinkLabel setName = new LinkLabel()
+                {
+                    //AutoSize = true,
+                    Location = new Point(0, 5),
+                    Text = setsInventory[i].Name,
+                    Font = itemEntryFont,
+                    ActiveLinkColor = Color.Black,
+                    LinkColor = Color.Black,
+                    LinkBehavior = LinkBehavior.NeverUnderline,
+                    AutoSize = true,
+                    Height = itemBoxHeight
+                };
+                itemSetPanel.Controls.Add(setName);
+                setName.Click += ItemLabel_Click;
+
+                //create a checkbox for wether or not the item itself was crafted
+                CheckBox craftedSet = new CheckBox()
+                {
+                    Location = new Point(525, 5),
+                    AutoSize = true,
+                    Checked = setsInventory[i].HasCraftedSet
+                };
+
+                craftedSet.CheckedChanged += (sender, EventArgs) => { CraftedSet_CheckedChanged(sender, EventArgs, indexI); };
+                itemSetPanel.Controls.Add(craftedSet);
+
+                nextYOffset += 30;
+
                 int itemYOffset = 30;
                 int itemXOffset = 15;
-                for (int j = 0; j < allPrimeSets[i].Count; j++)
+                for (int j = 0; j < setsInventory[i].ItemsInSet.Length; j++)
                 {
-                    itemXOffset = (j == 0) ? 0 : 15;
-
+                    int indexJ = j;
                     Panel itemPanel = new Panel()
                     {
-                        Name = allPrimeSets[i][j].item_name,
+                        Name = setsInventory[i].ItemsInSet[j].Name,
                         Width = itemPanelWidth,
                         Height = itemBoxHeight,
                         Location = new Point(0, itemYOffset),
@@ -176,36 +205,27 @@ namespace WarframeVoidRewardChecker
                     {
                         AutoSize = true,
                         Location = new Point(itemXOffset, 5),
-                        Text = allPrimeSets[i][j].item_name,
+                        Text = setsInventory[i].ItemsInSet[j].Name,
                         Font = itemEntryFont,
                         ActiveLinkColor = Color.Black,
                         LinkColor = Color.Black,
                         LinkBehavior = LinkBehavior.NeverUnderline
                     };
-                    itemLabel.Click += ItemLabel_Click;
                     itemPanel.Controls.Add(itemLabel);
+                    itemLabel.Click += ItemLabel_Click;
 
                     //create a checkbox for wether or not the bp has been crafted
-                    if (j != 0)
+                    CheckBox craftedBPCheckbox = new CheckBox()
                     {
-                        CheckBox craftedBPCheckbox = new CheckBox()
-                        {
-                            Location = new Point(305, 5),
-                            //Checked = inventory[i].HasCraftedBlueprint
-                        };
-                        craftedBPCheckbox.CheckedChanged += CraftedBPCheckbox_CheckedChanged;
-                        itemPanel.Controls.Add(craftedBPCheckbox);
-                    }
-
-                    //create a checkbox for wether or not the item itself was crafted
-                    CheckBox craftedFinalItemCheckbox = new CheckBox()
-                    {
-                        Location = new Point(525, 5),
-                        //Checked = inventory[i].HasCraftedFinalItem
+                        Location = new Point(305, 5),
+                        Checked = setsInventory[i].ItemsInSet[j].HasCraftedBlueprint
                     };
-                    craftedFinalItemCheckbox.CheckedChanged += CraftedFinalItemCheckbox_CheckedChanged;
-                    itemPanel.Controls.Add(craftedFinalItemCheckbox);
 
+                    craftedBPCheckbox.CheckedChanged += (sender, EventArgs) => { CraftedBPCheckbox_CheckedChanged(sender, EventArgs, indexI, indexJ); };
+
+                    itemPanel.Controls.Add(craftedBPCheckbox);
+
+                    //Add this box's height to the total height, so the next entry will be underneath this one
                     itemSetPanel.Height += itemBoxHeight;
 
                     itemYOffset += itemBoxHeight;
@@ -219,21 +239,19 @@ namespace WarframeVoidRewardChecker
         /// <summary>
         /// When the value of the item crafted checkbox changed we update the inventoryEntry accordingly
         /// </summary>
-        private void CraftedFinalItemCheckbox_CheckedChanged(object sender, EventArgs e)
+        private void CraftedSet_CheckedChanged(object sender, EventArgs e, int index)
         {
             CheckBox cBox = (CheckBox)sender;
-            //int index = inventory.IndexOf(inventory.FirstOrDefault(o => o.Name.Equals(cBox.Parent.Name)));
-            //inventory[index].SetHasCraftedItem(cBox.Checked);
+            setsInventory[index].SetHasCraftedSet(cBox.Checked);
         }
 
         /// <summary>
         /// When the value of the BP crafted checkbox changed we update the inventoryEntry accordingly
         /// </summary>
-        private void CraftedBPCheckbox_CheckedChanged(object sender, EventArgs e)
+        private void CraftedBPCheckbox_CheckedChanged(object sender, EventArgs e, int indexI, int indexJ)
         {
             CheckBox cBox = (CheckBox)sender;
-            //int index = inventory.IndexOf(inventory.FirstOrDefault(o => o.Name.Equals(cBox.Parent.Name)));
-            //inventory[index].SetHasCraftedBP(cBox.Checked);
+            setsInventory[indexI].ItemsInSet[indexJ].SetHasCraftedBP(cBox.Checked);
         }
 
         /// <summary>
@@ -434,10 +452,10 @@ namespace WarframeVoidRewardChecker
         public bool HasCraftedSet { get; private set; }
         public InventoryItemEntry[] ItemsInSet { get; private set; }
 
-        public InventorySetEntry(string name, bool hasCraftedset, InventoryItemEntry[] itemsInSet)
+        public InventorySetEntry(string name, bool hasCraftedSet, InventoryItemEntry[] itemsInSet)
         {
             this.Name = name;
-            this.HasCraftedSet = HasCraftedSet;
+            this.HasCraftedSet = hasCraftedSet;
             this.ItemsInSet = itemsInSet;
         }
 
