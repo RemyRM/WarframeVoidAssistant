@@ -151,7 +151,7 @@ namespace WarframeVoidRewardChecker
         /// <returns>Wether input is a valid warframe item</returns>
         static bool CompareInputAgainstDictionary(string input)
         {
-            List<WarframeMarketItemClass> itemClass = WarframeMarketApi.GetAllPrimeItems();
+            List<WarframeItem> itemClass = WarframeMarketApi.GetAllPrimeItems();
 
             return itemClass.Exists(o => o.item_name.Equals(input));
         }
@@ -169,10 +169,10 @@ namespace WarframeVoidRewardChecker
                 return "FORMA BLUEPRINT";
             }
 
-            List<WarframeMarketItemClass> itemClass = WarframeMarketApi.GetAllPrimeItems();
+            List<WarframeItem> itemClass = WarframeMarketApi.GetAllPrimeItems();
 
             string[] splitInput = input.Split(null);
-            WarframeMarketItemClass matchFirstWord = itemClass.FirstOrDefault(o => o.item_name.Contains(splitInput[0]));
+            WarframeItem matchFirstWord = itemClass.FirstOrDefault(o => o.item_name.Contains(splitInput[0]));
 
             if (matchFirstWord != null)
             {
@@ -186,17 +186,17 @@ namespace WarframeVoidRewardChecker
             }
 
             //Make a list of lists containing the items, this so we can sort them by the index given by split input. This way we can see if any item is found twice, meaning we got a match.
-            List<List<WarframeMarketItemClass>> occuranceOfWordList = new List<List<WarframeMarketItemClass>>();
+            List<List<WarframeItem>> occuranceOfWordList = new List<List<WarframeItem>>();
 
             //Loop through all the items found with the keywords found in SplitInput. Add all the results found to matchesWord
             for (int i = 0; i < splitInput.Length; i++)
             {
-                List<WarframeMarketItemClass> matchesWord = itemClass.Where(o => o.item_name.Contains(splitInput[i])).ToList();
+                List<WarframeItem> matchesWord = itemClass.Where(o => o.item_name.Contains(splitInput[i])).ToList();
                 occuranceOfWordList.Add(matchesWord);
             }
 
             //If any of the results found with the first keyword is also found in the second or third list we got a match, and we know it's that item.
-            WarframeMarketItemClass result = null;
+            WarframeItem result = null;
             for (int i = 1; i <= splitInput.Length; i++)
             {
                 try

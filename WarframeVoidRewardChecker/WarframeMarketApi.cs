@@ -18,11 +18,17 @@ namespace WarframeVoidRewardChecker
 
         readonly static string warframeMarketBaseUrl = @"https://warframe.market/static/assets/";
 
-        static List<WarframeMarketItemClass> allPrimeItems = new List<WarframeMarketItemClass>();
+        static List<WarframeItem> allPrimeItems = new List<WarframeItem>();
+        static List<List<WarframeItem>> allPrimesBySet = new List<List<WarframeItem>>();
 
-        internal static List<WarframeMarketItemClass> GetAllPrimeItems()
+        internal static List<WarframeItem> GetAllPrimeItems()
         {
             return allPrimeItems;
+        }
+
+        internal static List<List<WarframeItem>> GetAllPrimesBySet()
+        {
+            return allPrimesBySet;
         }
 
         /// <summary>
@@ -54,26 +60,67 @@ namespace WarframeVoidRewardChecker
                 rawItemJson = reader.ReadToEnd();
             }
 
+            SavePrimeItemsJson(rawItemJson);
+        }
+
+        /// <summary>
+        /// Save the rawJson string containing the prime items list to json
+        /// </summary>
+        /// <param name="rawItemJson"></param>
+        private static void SavePrimeItemsJson(string rawItemJson)
+        {
             JObject jsonResults = JObject.Parse(rawItemJson);
             List<JToken> filteredResults = jsonResults["payload"]["items"]["en"].Children().ToList();
 
             foreach (JToken token in filteredResults)
             {
-                WarframeMarketItemClass item = token.ToObject<WarframeMarketItemClass>();
+                WarframeItem item = token.ToObject<WarframeItem>();
                 //Get rid of any non-prime items (like mods) and items sets.
-                if (item.item_name.Contains("Prime") && !item.item_name.Contains("Primed") &&
-                    !item.item_name.Substring(item.item_name.Length - 3, 3).Equals("Set"))
+                if (item.item_name.Contains("Prime") && !item.item_name.Contains("Primed"))
                 {
-                    item.thumb = warframeMarketBaseUrl + item.thumb;
-                    item.item_name = item.item_name.ToUpper();
+                    item.SetThumb(warframeMarketBaseUrl + item.thumb);
+                    item.SetItemName(item.item_name.ToUpper());
                     allPrimeItems.Add(item);
                 }
 
-                //Order the items alphabetically by name
-                allPrimeItems = allPrimeItems.OrderBy(o => o.item_name).ToList();
             }
+            //Order the items alphabetically by name
+            allPrimeItems = allPrimeItems.OrderBy(o => o.item_name).ToList();
+            SavePrimesBySet();
 
             SavePrimesToJson();
+        }
+
+        /// <summary>
+        /// Creates a list of all set items, subdivided into lists of items with the set item on top
+        /// </summary>
+        private static void SavePrimesBySet()
+        {
+            for (int i = 0; i < allPrimeItems.Count; i++)
+            {
+                if (allPrimeItems[i].item_name.Contains("SET"))
+                {
+                    string setItemName = allPrimeItems[i].item_name;
+                    List<WarframeItem> itemSet = new List<WarframeItem>
+                    {
+                        allPrimeItems[i]
+                    };
+                    for (int j = i; j >= 0; j--)
+                    {
+                        string sub = setItemName.Substring(0, setItemName.IndexOf(' '));
+                        if (allPrimeItems[j].item_name.Contains(sub) && !allPrimeItems[j].item_name.Contains("SET"))
+                        {
+                            itemSet.Add(allPrimeItems[j]);
+                        }
+                        else if (!allPrimeItems[j].item_name.Contains(sub))
+                        {
+                            break;
+                        }
+                    }
+
+                    allPrimesBySet.Add(itemSet);
+                }
+            }
         }
 
         /// <summary>
@@ -109,10 +156,11 @@ namespace WarframeVoidRewardChecker
             List<JToken> filteredResults = jsonResults.Children().ToList();
             foreach (JToken token in filteredResults)
             {
-                WarframeMarketItemClass item = token.ToObject<WarframeMarketItemClass>();
+                WarframeItem item = token.ToObject<WarframeItem>();
                 allPrimeItems.Add(item);
             }
             Console.WriteLine("PrimeItems.json was loaded in");
+            SavePrimesBySet();
         }
 
         /// <summary>
@@ -142,11 +190,31 @@ namespace WarframeVoidRewardChecker
         }
     }
 
-    internal class WarframeMarketItemClass
+    internal class WarframeItem
     {
         public string item_name;
         public string thumb;
         public string id;
         public string url_name;
+
+        public void SetItemName(string value)
+        {
+            item_name = value;
+        }
+
+        public void SetThumb(string value)
+        {
+            thumb = value;
+        }
+
+        public void SetId(string value)
+        {
+            id = value;
+        }
+
+        public void SetUrlName(string value)
+        {
+            url_name = value;
+        }
     }
 }

@@ -16,7 +16,8 @@ namespace WarframeVoidRewardChecker
         readonly static string JSONpath = @"D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\Resources\Files\";
         readonly static string inventorySaveFile = @"InventorySaveData.json";
 
-        static List<WarframeMarketItemClass> allPrimeItems;
+        static List<WarframeItem> allPrimeItems;
+        static List<List<WarframeItem>> allPrimeSets;
         static List<InventoryEntry> inventory = new List<InventoryEntry>();
 
         static Font itemEntryFont = new Font("Arial", 11);
@@ -26,6 +27,7 @@ namespace WarframeVoidRewardChecker
         static int itemBoxHeight = 30;
 
         static int mainPanelHeightOffset = 125;
+        static int itemPanelWidth = 660;
 
         static Label itemImageLabel;
         static Label itemIDLabel;
@@ -39,6 +41,7 @@ namespace WarframeVoidRewardChecker
             MainItemPanel.AutoScroll = true;
 
             allPrimeItems = WarframeMarketApi.GetAllPrimeItems();
+            allPrimeSets = WarframeMarketApi.GetAllPrimesBySet();
 
             if (File.Exists(JSONpath + inventorySaveFile))
             {
@@ -88,7 +91,7 @@ namespace WarframeVoidRewardChecker
                 Console.WriteLine("Error creating file. File not found");
             }
 
-            FillInventoryPanel();
+            //FillInventoryPanel();
         }
 
         /// <summary>
@@ -116,63 +119,154 @@ namespace WarframeVoidRewardChecker
         /// <summary>
         /// Fill the main panel with the item entries
         /// </summary>
-        private void FillInventoryPanel()
+        private void FillInventoryPanel(string filter = null)
         {
-            for (int i = 0; i < inventory.Count; i++)
+            Console.WriteLine("started filling of inventory with {0} sets", allPrimeSets.Count);
+            int nextYOffset = -30;
+            for (int i = 0; i < allPrimeSets.Count; i++)
             {
-                int yOffset = startY + (i * itemBoxHeight);
+                //If the item name doesn't match the filter we don't include it
+                //if (filter != null && !allPrimeSets[i][0].item_name.Contains(filter))
+                //{
+                //    Console.WriteLine("Not found in filter, continue.");
+                //    continue;
+                //}
 
-                //Create a sub panel that contains the name and checkboxes
-                Panel SubItemPanel = new Panel()
+                Panel itemSetPanel = new Panel()
                 {
-                    Location = new Point(0, yOffset),
-                    Width = 660,
+                    Name = allPrimeSets[i][0].item_name,
+                    Width = itemPanelWidth,
                     Height = itemBoxHeight,
-                    Name = inventory[i].Name
+                    Location = new Point(0, nextYOffset),
+                    //BackColor = Color.Magenta
                 };
+                MainItemPanel.Controls.Add(itemSetPanel);
+                Console.WriteLine("Added main set panel {0} at {1}", itemSetPanel.Name, itemSetPanel.Location);
 
-                if (i % 2 == 0)
+                int itemYOffset = 30;
+                int itemXOffset = 15;
+                for (int j = 0; j < allPrimeSets[i].Count; j++)
                 {
-                    SubItemPanel.BackColor = Color.WhiteSmoke;
+                    itemXOffset = (j == 0) ? 0 : 15;
+
+                    Panel itemPanel = new Panel()
+                    {
+                        Name = allPrimeSets[i][j].item_name,
+                        Width = itemPanelWidth,
+                        Height = itemBoxHeight,
+                        Location = new Point(0, itemYOffset),
+                    };
+                    itemSetPanel.Controls.Add(itemPanel);
+
+                    //if (i % 2 == 0)
+                    //{
+                    //    itemPanel.BackColor = Color.White;
+                    //}
+                    //else
+                    //{
+                    //    itemPanel.BackColor = Color.WhiteSmoke;
+                    //}
+
+                    //Create a label containing the item name
+                    LinkLabel itemLabel = new LinkLabel()
+                    {
+                        AutoSize = true,
+                        Location = new Point(itemXOffset, 5),
+                        Text = allPrimeSets[i][j].item_name,
+                        Font = itemEntryFont,
+                        ActiveLinkColor = Color.Black,
+                        LinkColor = Color.Black,
+                        LinkBehavior = LinkBehavior.NeverUnderline
+                    };
+                    itemLabel.Click += ItemLabel_Click;
+                    itemPanel.Controls.Add(itemLabel);
+
+                    //create a checkbox for wether or not the bp has been crafted
+                    if (j != 0)
+                    {
+                        CheckBox craftedBPCheckbox = new CheckBox()
+                        {
+                            Location = new Point(305, 5),
+                            Checked = inventory[i].HasCraftedBlueprint
+                        };
+                        craftedBPCheckbox.CheckedChanged += CraftedBPCheckbox_CheckedChanged;
+                        itemPanel.Controls.Add(craftedBPCheckbox);
+                    }
+
+                    //create a checkbox for wether or not the item itself was crafted
+                    CheckBox craftedFinalItemCheckbox = new CheckBox()
+                    {
+                        Location = new Point(525, 5),
+                        Checked = inventory[i].HasCraftedFinalItem
+                    };
+                    craftedFinalItemCheckbox.CheckedChanged += CraftedFinalItemCheckbox_CheckedChanged;
+                    itemPanel.Controls.Add(craftedFinalItemCheckbox);
+
+                    itemSetPanel.Height += itemBoxHeight;
+
+                    itemYOffset += itemBoxHeight;
+                    nextYOffset += itemBoxHeight;
+
+                    Console.WriteLine("Added subpanel {0} at {1}", itemPanel.Name, itemPanel.Location);
                 }
-
-                //Create a label containing the item name
-                LinkLabel itemLabel = new LinkLabel()
-                {
-                    AutoSize = true,
-                    Location = new Point(0, 5),
-                    Text = allPrimeItems[i].item_name,
-                    Font = itemEntryFont,
-                    ActiveLinkColor = Color.Black,
-                    LinkColor = Color.Black,
-                    LinkBehavior = LinkBehavior.NeverUnderline
-                };
-                itemLabel.Click += ItemLabel_Click;
-
-                //create a checkbox for wether or not the bp has been crafted
-                CheckBox craftedBPCheckbox = new CheckBox()
-                {
-                    Location = new Point(305, 5),
-                    Checked = inventory[i].HasCraftedBlueprint
-                };
-                craftedBPCheckbox.CheckedChanged += CraftedBPCheckbox_CheckedChanged;
-
-                //create a checkbox for wether or not the item itself was crafted
-                CheckBox craftedFinalItemCheckbox = new CheckBox()
-                {
-                    Location = new Point(525, 5),
-                    Checked = inventory[i].HasCraftedFinalItem
-                };
-                craftedFinalItemCheckbox.CheckedChanged += CraftedFinalItemCheckbox_CheckedChanged;
-
-                //add the name and checkboxes to the sub panel 
-                SubItemPanel.Controls.Add(itemLabel);
-                SubItemPanel.Controls.Add(craftedBPCheckbox);
-                SubItemPanel.Controls.Add(craftedFinalItemCheckbox);
-
-                //add the panel to the main form
-                MainItemPanel.Controls.Add(SubItemPanel);
+                nextYOffset += 10;
             }
+
+            //for (int i = 0; i < inventory.Count; i++)
+            //{
+            //    int yOffset = startY + (i * itemBoxHeight);
+
+            //    //Create a sub panel that contains the name and checkboxes
+            //    Panel SubItemPanel = new Panel()
+            //    {
+            //        Location = new Point(0, yOffset),
+            //        Width = 660,
+            //        Height = itemBoxHeight,
+            //        Name = inventory[i].Name
+            //    };
+
+            //    if (i % 2 == 0)
+            //    {
+            //        SubItemPanel.BackColor = Color.WhiteSmoke;
+            //    }
+
+            //    //Create a label containing the item name
+            //    LinkLabel itemLabel = new LinkLabel()
+            //    {
+            //        AutoSize = true,
+            //        Location = new Point(0, 5),
+            //        Text = allPrimeItems[i].item_name,
+            //        Font = itemEntryFont,
+            //        ActiveLinkColor = Color.Black,
+            //        LinkColor = Color.Black,
+            //        LinkBehavior = LinkBehavior.NeverUnderline
+            //    };
+            //    itemLabel.Click += ItemLabel_Click;
+
+            //    //create a checkbox for wether or not the bp has been crafted
+            //    CheckBox craftedBPCheckbox = new CheckBox()
+            //    {
+            //        Location = new Point(305, 5),
+            //        Checked = inventory[i].HasCraftedBlueprint
+            //    };
+            //    craftedBPCheckbox.CheckedChanged += CraftedBPCheckbox_CheckedChanged;
+
+            //    //create a checkbox for wether or not the item itself was crafted
+            //    CheckBox craftedFinalItemCheckbox = new CheckBox()
+            //    {
+            //        Location = new Point(525, 5),
+            //        Checked = inventory[i].HasCraftedFinalItem
+            //    };
+            //    craftedFinalItemCheckbox.CheckedChanged += CraftedFinalItemCheckbox_CheckedChanged;
+
+            //    //add the name and checkboxes to the sub panel 
+            //    SubItemPanel.Controls.Add(itemLabel);
+            //    SubItemPanel.Controls.Add(craftedBPCheckbox);
+            //    SubItemPanel.Controls.Add(craftedFinalItemCheckbox);
+
+            //    //add the panel to the main form
+            //    MainItemPanel.Controls.Add(SubItemPanel);
+            //}
         }
 
         /// <summary>
@@ -204,7 +298,7 @@ namespace WarframeVoidRewardChecker
         {
             LinkLabel s = (LinkLabel)sender;
 
-            WarframeMarketItemClass item = allPrimeItems.FirstOrDefault(o => o.item_name.Equals(s.Text));
+            WarframeItem item = allPrimeItems.FirstOrDefault(o => o.item_name.Equals(s.Text));
 
             itemIDLabel.Text = item.id;
 

@@ -24,6 +24,12 @@
     "url_name": "akbolto_prime_receiver"
   },
   {
+    "item_name": "AKBOLTO PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Akbolto_Prime_Set.fdb7b0be60ed776a1ba1d800d7cda22b.128x128.png",
+    "id": "5a311f84c2c9e90dfff475f1",
+    "url_name": "akbolto_prime_set"
+  },
+  {
     "item_name": "AKBRONCO PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "54a73e65e779893a797fff22",
@@ -34,6 +40,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/link_128x128.png",
     "id": "54a73e65e779893a797fff23",
     "url_name": "akbronco_prime_link"
+  },
+  {
+    "item_name": "AKBRONCO PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Akbronco_Prime_Set.34b5a7f99e5f8c15cc2039a76c725069.128x128.png",
+    "id": "56783f24cbfa8f0432dd898d",
+    "url_name": "akbronco_prime_set"
   },
   {
     "item_name": "AKJAGARA PRIME BARREL",
@@ -60,6 +72,12 @@
     "url_name": "akjagara_prime_receiver"
   },
   {
+    "item_name": "AKJAGARA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Akjagara_Prime_Set.d3227deeb0bd5a52de99a4534a54b2b5.128x128.png",
+    "id": "5c196fae96037800ddadac15",
+    "url_name": "akjagara_prime_set"
+  },
+  {
     "item_name": "AKLEX PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "588bc3bcc353473a172364f2",
@@ -70,6 +88,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/link_128x128.png",
     "id": "588c7923c353473a172364f3",
     "url_name": "aklex_prime_link"
+  },
+  {
+    "item_name": "AKLEX PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Aklex_Prime_Set.d4be2f3e545d5e1101d5b83a027e68fe.128x128.png",
+    "id": "588c7a51c353473a172364f4",
+    "url_name": "aklex_prime_set"
   },
   {
     "item_name": "AKSTILETTO PRIME BARREL",
@@ -96,6 +120,12 @@
     "url_name": "akstiletto_prime_receiver"
   },
   {
+    "item_name": "AKSTILETTO PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Akstiletto_Prime_Set.a88c0a1e43ba462af7cc44efd01a7044.128x128.png",
+    "id": "573b805f0ec44a47787a6919",
+    "url_name": "akstiletto_prime_set"
+  },
+  {
     "item_name": "AKVASTO PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "5bebf1713ffcc704caf38cf6",
@@ -106,6 +136,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/link_128x128.png",
     "id": "5bebf1713ffcc704caf38cf7",
     "url_name": "akvasto_prime_link"
+  },
+  {
+    "item_name": "AKVASTO PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Akvasto_Prime_Set.029887bbd387510ffec1debd81f65dab.128x128.png",
+    "id": "5bebf1713ffcc704caf38cf4",
+    "url_name": "akvasto_prime_set"
   },
   {
     "item_name": "ANKYROS PRIME BLADE",
@@ -126,6 +162,12 @@
     "url_name": "ankyros_prime_gauntlet"
   },
   {
+    "item_name": "ANKYROS PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Ankyros_Prime_Set.81b3e5876c214047d10a0d90f92ebdfe.128x128.png",
+    "id": "56783f24cbfa8f0432dd898e",
+    "url_name": "ankyros_prime_set"
+  },
+  {
     "item_name": "ASH PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "559daa9fe779897b3263c2c7",
@@ -142,6 +184,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "559daab7e779897b3d86cb8f",
     "url_name": "ash_prime_neuroptics"
+  },
+  {
+    "item_name": "ASH PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Ash_Prime_Set.9f3f82bee82a9741531857cf76eb6594.128x128.png",
+    "id": "56783f24cbfa8f0432dd898f",
+    "url_name": "ash_prime_set"
   },
   {
     "item_name": "ASH PRIME SYSTEMS",
@@ -166,6 +214,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/receiver_128x128.png",
     "id": "59a5cd4d5cd9938cfede7046",
     "url_name": "ballistica_prime_receiver"
+  },
+  {
+    "item_name": "BALLISTICA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Ballistica_Prime_Set.4ed33348008ace40406d0383f692ecac.128x128.png",
+    "id": "59a5c2565cd9938cfede703e",
+    "url_name": "ballistica_prime_set"
   },
   {
     "item_name": "BALLISTICA PRIME STRING",
@@ -198,6 +252,12 @@
     "url_name": "banshee_prime_neuroptics"
   },
   {
+    "item_name": "BANSHEE PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Banshee_Prime_Set.a0956816beb733841bce57e69a568cd6.128x128.png",
+    "id": "58b57068eb26db5c3119210e",
+    "url_name": "banshee_prime_set"
+  },
+  {
     "item_name": "BANSHEE PRIME SYSTEMS",
     "thumb": "https://warframe.market/static/assets/sub_icons/systems_128x128.png",
     "id": "58b57068eb26db5c3119210d",
@@ -222,6 +282,12 @@
     "url_name": "bo_prime_ornament"
   },
   {
+    "item_name": "BO PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Bo_Prime_Set.fad65cfb95d62a4275be60be30375846.128x128.png",
+    "id": "56783f24cbfa8f0432dd8990",
+    "url_name": "bo_prime_set"
+  },
+  {
     "item_name": "BOAR PRIME BARREL",
     "thumb": "https://warframe.market/static/assets/sub_icons/barrel_128x128.png",
     "id": "54a73e65e779893a797fff2a",
@@ -238,6 +304,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/receiver_128x128.png",
     "id": "54a73e65e779893a797fff2c",
     "url_name": "boar_prime_receiver"
+  },
+  {
+    "item_name": "BOAR PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Boar_Prime_Set.5e8a5ba1520169c7a99c738624328d26.128x128.png",
+    "id": "56783f24cbfa8f0432dd8991",
+    "url_name": "boar_prime_set"
   },
   {
     "item_name": "BOAR PRIME STOCK",
@@ -264,6 +336,12 @@
     "url_name": "boltor_prime_receiver"
   },
   {
+    "item_name": "BOLTOR PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Boltor_Prime_Set.a26157003dea5b1e1fe6660f46f3ea11.128x128.png",
+    "id": "56783f24cbfa8f0432dd8992",
+    "url_name": "boltor_prime_set"
+  },
+  {
     "item_name": "BOLTOR PRIME STOCK",
     "thumb": "https://warframe.market/static/assets/sub_icons/stock_128x128.png",
     "id": "54a73e65e779893a797fff31",
@@ -286,6 +364,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/receiver_128x128.png",
     "id": "54a73e65e779893a797fff34",
     "url_name": "braton_prime_receiver"
+  },
+  {
+    "item_name": "BRATON PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Braton_Prime_Set.ae229642d6179ebfb1547ed7d976e749.128x128.png",
+    "id": "56783f24cbfa8f0432dd8993",
+    "url_name": "braton_prime_set"
   },
   {
     "item_name": "BRATON PRIME STOCK",
@@ -312,6 +396,12 @@
     "url_name": "bronco_prime_receiver"
   },
   {
+    "item_name": "BRONCO PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Bronco_Prime_Set.aa5499a3b26806f1f26a987be9dcf0ca.128x128.png",
+    "id": "56783f24cbfa8f0432dd8994",
+    "url_name": "bronco_prime_set"
+  },
+  {
     "item_name": "BURSTON PRIME BARREL",
     "thumb": "https://warframe.market/static/assets/sub_icons/barrel_128x128.png",
     "id": "54a73e65e779893a797fff39",
@@ -328,6 +418,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/receiver_128x128.png",
     "id": "54a73e65e779893a797fff3b",
     "url_name": "burston_prime_receiver"
+  },
+  {
+    "item_name": "BURSTON PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Burston_Prime_Set.9fc6c6a6dca24113027828df669cd89e.128x128.png",
+    "id": "56783f24cbfa8f0432dd8995",
+    "url_name": "burston_prime_set"
   },
   {
     "item_name": "BURSTON PRIME STOCK",
@@ -354,6 +450,12 @@
     "url_name": "carrier_prime_cerebrum"
   },
   {
+    "item_name": "CARRIER PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Carrier_Prime_Set.1f39e6e9ecef0225b0755dd5c89f3cc8.128x128.png",
+    "id": "56783f24cbfa8f0432dd8996",
+    "url_name": "carrier_prime_set"
+  },
+  {
     "item_name": "CARRIER PRIME SYSTEMS",
     "thumb": "https://warframe.market/static/assets/sub_icons/systems_128x128.png",
     "id": "559daad8e779897b4f59525f",
@@ -376,6 +478,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/lower_limb_128x128.png",
     "id": "583580e12c2ada003badef86",
     "url_name": "cernos_prime_lower_limb"
+  },
+  {
+    "item_name": "CERNOS PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Cernos_Prime_Set.b3ac02e80ee17cc0756348f1d04b69cc.128x128.png",
+    "id": "583580ff2c2ada003badef8a",
+    "url_name": "cernos_prime_set"
   },
   {
     "item_name": "CERNOS PRIME STRING",
@@ -408,6 +516,12 @@
     "url_name": "chroma_prime_neuroptics"
   },
   {
+    "item_name": "CHROMA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Chroma_Prime_Set.746ea1c1556aa60f94f0c2399946baaf.128x128.png",
+    "id": "5ba9f2034567de01415f638b",
+    "url_name": "chroma_prime_set"
+  },
+  {
     "item_name": "CHROMA PRIME SYSTEMS",
     "thumb": "https://warframe.market/static/assets/sub_icons/systems_128x128.png",
     "id": "5ba9f2014567de01415f6387",
@@ -432,6 +546,12 @@
     "url_name": "dakra_prime_handle"
   },
   {
+    "item_name": "DAKRA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Dakra_Prime_Set.785a613039ec892abc579c176f0b33da.128x128.png",
+    "id": "56783f24cbfa8f0432dd8997",
+    "url_name": "dakra_prime_set"
+  },
+  {
     "item_name": "DESTREZA PRIME BLADE",
     "thumb": "https://warframe.market/static/assets/sub_icons/blade_128x128.png",
     "id": "5b2985e0eb069f04ea65b0d8",
@@ -448,6 +568,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/handle_128x128.png",
     "id": "5b2985e3eb069f04ea65b0fd",
     "url_name": "destreza_prime_handle"
+  },
+  {
+    "item_name": "DESTREZA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Destreza_Prime_Set.b1a1cc461a2cfcf9998f0588c8e932a4.128x128.png",
+    "id": "5b2985e2eb069f04ea65b0f6",
+    "url_name": "destreza_prime_set"
   },
   {
     "item_name": "DUAL KAMAS PRIME BLADE",
@@ -468,6 +594,12 @@
     "url_name": "dual_kamas_prime_handle"
   },
   {
+    "item_name": "DUAL KAMAS PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Dual_Kamas_Prime_Set.7d95cad6d71a59fa98902cc8bfe87da2.128x128.png",
+    "id": "56783f24cbfa8f0432dd8999",
+    "url_name": "dual_kamas_prime_set"
+  },
+  {
     "item_name": "EMBER PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "54a73e65e779893a797fff81",
@@ -484,6 +616,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "54a73e65e779893a797fff6d",
     "url_name": "ember_prime_neuroptics"
+  },
+  {
+    "item_name": "EMBER PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Ember_Prime_Set.971255acc3f1ad8a374d236c6af1c816.128x128.png",
+    "id": "56783f24cbfa8f0432dd899a",
+    "url_name": "ember_prime_set"
   },
   {
     "item_name": "EMBER PRIME SYSTEMS",
@@ -510,6 +648,12 @@
     "url_name": "equinox_prime_neuroptics"
   },
   {
+    "item_name": "EQUINOX PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Equinox_Prime_Set.1163c3dad7a8ffce02af7d475fc0ccd4.128x128.png",
+    "id": "5ca28670fc2db2035eae059e",
+    "url_name": "equinox_prime_set"
+  },
+  {
     "item_name": "EQUINOX PRIME SYSTEMS",
     "thumb": "https://warframe.market/static/assets/sub_icons/systems_128x128.png",
     "id": "5ca28670fc2db2035eae05a0",
@@ -534,6 +678,12 @@
     "url_name": "euphona_prime_receiver"
   },
   {
+    "item_name": "EUPHONA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Euphona_Prime_Set.6a18cc50c57ac13c3203e872baf85a8d.128x128.png",
+    "id": "58b57068eb26db5c31192113",
+    "url_name": "euphona_prime_set"
+  },
+  {
     "item_name": "FANG PRIME BLADE",
     "thumb": "https://warframe.market/static/assets/sub_icons/blade_128x128.png",
     "id": "54a73e65e779893a797fff40",
@@ -550,6 +700,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/handle_128x128.png",
     "id": "54a73e65e779893a797fff42",
     "url_name": "fang_prime_handle"
+  },
+  {
+    "item_name": "FANG PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Fang_Prime_Set.13b0c690a76382d0fbdebe84e4c509db.128x128.png",
+    "id": "56783f24cbfa8f0432dd899b",
+    "url_name": "fang_prime_set"
   },
   {
     "item_name": "FRAGOR PRIME BLUEPRINT",
@@ -570,6 +726,12 @@
     "url_name": "fragor_prime_head"
   },
   {
+    "item_name": "FRAGOR PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Fragor_Prime_Set.2b917b8a12f0981ff0a9a48c6c24edb1.128x128.png",
+    "id": "573b802f0ec44a47787a6914",
+    "url_name": "fragor_prime_set"
+  },
+  {
     "item_name": "FROST PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "54a73e65e779893a797fff80",
@@ -586,6 +748,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "54a73e65e779893a797fff6c",
     "url_name": "frost_prime_neuroptics"
+  },
+  {
+    "item_name": "FROST PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Frost_Prime_Set.4f8ff8605be1afaab9a0e5cc3c67cb21.128x128.png",
+    "id": "56783f24cbfa8f0432dd899c",
+    "url_name": "frost_prime_set"
   },
   {
     "item_name": "FROST PRIME SYSTEMS",
@@ -612,6 +780,12 @@
     "url_name": "galatine_prime_handle"
   },
   {
+    "item_name": "GALATINE PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Galatine_Prime_Set.066b855eb73def09ca5f21f677010098.128x128.png",
+    "id": "57bc9c99e506eb45ea25145a",
+    "url_name": "galatine_prime_set"
+  },
+  {
     "item_name": "GLAIVE PRIME BLADE",
     "thumb": "https://warframe.market/static/assets/sub_icons/blade_128x128.png",
     "id": "54a73e65e779893a797fff43",
@@ -628,6 +802,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/disc_128x128.png",
     "id": "54a73e65e779893a797fff45",
     "url_name": "glaive_prime_disc"
+  },
+  {
+    "item_name": "GLAIVE PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Glaive_Prime_Set.17767ab370f143a315df90177995ef92.128x128.png",
+    "id": "56783f24cbfa8f0432dd899d",
+    "url_name": "glaive_prime_set"
   },
   {
     "item_name": "GRAM PRIME BLADE",
@@ -648,6 +828,12 @@
     "url_name": "gram_prime_handle"
   },
   {
+    "item_name": "GRAM PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Gram_Prime_Set.678c245a88b54368ae895b73b6987231.128x128.png",
+    "id": "5baa8bbf4567de01ac283497",
+    "url_name": "gram_prime_set"
+  },
+  {
     "item_name": "HELIOS PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "58b57068eb26db5c31192118",
@@ -666,6 +852,12 @@
     "url_name": "helios_prime_cerebrum"
   },
   {
+    "item_name": "HELIOS PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Helios_Prime_Set.625b7c74ea5dd61b1840f8094df7648a.128x128.png",
+    "id": "58b57068eb26db5c31192114",
+    "url_name": "helios_prime_set"
+  },
+  {
     "item_name": "HELIOS PRIME SYSTEMS",
     "thumb": "https://warframe.market/static/assets/sub_icons/systems_128x128.png",
     "id": "58b57068eb26db5c31192117",
@@ -682,6 +874,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/pouch_128x128.png",
     "id": "54a73e65e779893a797fff47",
     "url_name": "hikou_prime_pouch"
+  },
+  {
+    "item_name": "HIKOU PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Hikou_Prime_Set.cd5cefce60a4e85c15614139a8ee9400.128x128.png",
+    "id": "56783f24cbfa8f0432dd899e",
+    "url_name": "hikou_prime_set"
   },
   {
     "item_name": "HIKOU PRIME STARS",
@@ -708,6 +906,12 @@
     "url_name": "hydroid_prime_neuroptics"
   },
   {
+    "item_name": "HYDROID PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Hydroid_Prime_Set.5f1abb4ef137bf0dd41565a913f5232a.128x128.png",
+    "id": "59a48b625cd9938cfede703c",
+    "url_name": "hydroid_prime_set"
+  },
+  {
     "item_name": "HYDROID PRIME SYSTEMS",
     "thumb": "https://warframe.market/static/assets/sub_icons/systems_128x128.png",
     "id": "59a48b625cd9938cfede703b",
@@ -732,6 +936,12 @@
     "url_name": "kavasa_prime_collar_buckle"
   },
   {
+    "item_name": "KAVASA PRIME COLLAR SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Kavasa_Prime_Collar_Set.cc1bafee4156c05ebaa812d39cd559ba.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a0",
+    "url_name": "kavasa_prime_collar_set"
+  },
+  {
     "item_name": "KOGAKE PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "5a311f84c2c9e90dfff475e5",
@@ -748,6 +958,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/gauntlet_128x128.png",
     "id": "5a311f85c2c9e90dfff475f6",
     "url_name": "kogake_prime_gauntlet"
+  },
+  {
+    "item_name": "KOGAKE PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Kogake_Prime_Set.456b865463108d6f6ff51da978f839cd.128x128.png",
+    "id": "5a311f84c2c9e90dfff475f0",
+    "url_name": "kogake_prime_set"
   },
   {
     "item_name": "KRONEN PRIME BLADE",
@@ -768,6 +984,12 @@
     "url_name": "kronen_prime_handle"
   },
   {
+    "item_name": "KRONEN PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Kronen_Prime_Set.09023145e06199878b94a9c664e95ce7.128x128.png",
+    "id": "5ab167b7b2b6a80475780fb3",
+    "url_name": "kronen_prime_set"
+  },
+  {
     "item_name": "LATRON PRIME BARREL",
     "thumb": "https://warframe.market/static/assets/sub_icons/barrel_128x128.png",
     "id": "54a73e65e779893a797fff49",
@@ -784,6 +1006,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/receiver_128x128.png",
     "id": "54a73e65e779893a797fff4b",
     "url_name": "latron_prime_receiver"
+  },
+  {
+    "item_name": "LATRON PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Latron_Prime_Set.5c8b8009acbdb97fd49177ba155ecfbe.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a1",
+    "url_name": "latron_prime_set"
   },
   {
     "item_name": "LATRON PRIME STOCK",
@@ -810,6 +1038,12 @@
     "url_name": "lex_prime_receiver"
   },
   {
+    "item_name": "LEX PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Lex_Prime_Set.13776cf63dfd68968067b517184a6ac0.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a2",
+    "url_name": "lex_prime_set"
+  },
+  {
     "item_name": "LIMBO PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "5b2987aaeb069f0536234276",
@@ -826,6 +1060,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "5b2987abeb069f0536234277",
     "url_name": "limbo_prime_neuroptics"
+  },
+  {
+    "item_name": "LIMBO PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Limbo_Prime_Set.7bfbc70bd8438594d45a47fba260b174.128x128.png",
+    "id": "5b2987abeb069f0536234278",
+    "url_name": "limbo_prime_set"
   },
   {
     "item_name": "LIMBO PRIME SYSTEMS",
@@ -852,6 +1092,12 @@
     "url_name": "loki_prime_neuroptics"
   },
   {
+    "item_name": "LOKI PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Loki_Prime_Set.abc05c280f92196bcb688643873fbf95.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a3",
+    "url_name": "loki_prime_set"
+  },
+  {
     "item_name": "LOKI PRIME SYSTEMS",
     "thumb": "https://warframe.market/static/assets/sub_icons/systems_128x128.png",
     "id": "54a73e65e779893a797fff74",
@@ -874,6 +1120,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "54a73e65e779893a797fff6e",
     "url_name": "mag_prime_neuroptics"
+  },
+  {
+    "item_name": "MAG PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Mag_Prime_Set.2afb45373319b966737bd91cf05a813c.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a4",
+    "url_name": "mag_prime_set"
   },
   {
     "item_name": "MAG PRIME SYSTEMS",
@@ -900,6 +1152,12 @@
     "url_name": "mesa_prime_neuroptics"
   },
   {
+    "item_name": "MESA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Mesa_Prime_Set.34d67af54de052f6de1d5ae64ed40197.128x128.png",
+    "id": "5c182b739603780081b09a53",
+    "url_name": "mesa_prime_set"
+  },
+  {
     "item_name": "MESA PRIME SYSTEMS",
     "thumb": "https://warframe.market/static/assets/sub_icons/systems_128x128.png",
     "id": "5c182b749603780081b09a56",
@@ -922,6 +1180,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "5a2feeb2c2c9e90cbdaa23d6",
     "url_name": "mirage_prime_neuroptics"
+  },
+  {
+    "item_name": "MIRAGE PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Mirage_Prime_Set.e7f8f484dd6ae6c35f0767fff35a5109.128x128.png",
+    "id": "5a2feeb2c2c9e90cbdaa23d3",
+    "url_name": "mirage_prime_set"
   },
   {
     "item_name": "MIRAGE PRIME SYSTEMS",
@@ -948,6 +1212,12 @@
     "url_name": "nami_skyla_prime_handle"
   },
   {
+    "item_name": "NAMI SKYLA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Nami_Skyla_Prime_Set.d83bcdd72463d5dd1f78faea07ff02a4.128x128.png",
+    "id": "59a5c2565cd9938cfede7040",
+    "url_name": "nami_skyla_prime_set"
+  },
+  {
     "item_name": "NEKROS PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "57bcb14ce506eb45ea25145e",
@@ -964,6 +1234,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "57bc9a40e506eb45ea251453",
     "url_name": "nekros_prime_neuroptics"
+  },
+  {
+    "item_name": "NEKROS PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Nekros_Prime_Set.523943a15c82985ebe7cf14eac98966d.128x128.png",
+    "id": "57bc9a40e506eb45ea251451",
+    "url_name": "nekros_prime_set"
   },
   {
     "item_name": "NEKROS PRIME SYSTEMS",
@@ -990,6 +1266,12 @@
     "url_name": "nikana_prime_hilt"
   },
   {
+    "item_name": "NIKANA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Nikana_Prime_Set.2daac0807a52385bfcf62f71075f2221.128x128.png",
+    "id": "56c3bbfc5d2f0202da32e943",
+    "url_name": "nikana_prime_set"
+  },
+  {
     "item_name": "NOVA PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "54a73e65e779893a797fff6b",
@@ -1006,6 +1288,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "54a73e65e779893a797fff68",
     "url_name": "nova_prime_neuroptics"
+  },
+  {
+    "item_name": "NOVA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Nova_Prime_Set.639a9222e1cb351cd6dd09ef28155ef0.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a5",
+    "url_name": "nova_prime_set"
   },
   {
     "item_name": "NOVA PRIME SYSTEMS",
@@ -1032,6 +1320,12 @@
     "url_name": "nyx_prime_neuroptics"
   },
   {
+    "item_name": "NYX PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Nyx_Prime_Set.fd41c04c9e9bcc7e0e6963914f68f880.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a6",
+    "url_name": "nyx_prime_set"
+  },
+  {
     "item_name": "NYX PRIME SYSTEMS",
     "thumb": "https://warframe.market/static/assets/sub_icons/systems_128x128.png",
     "id": "54a73e65e779893a797fff76",
@@ -1056,6 +1350,12 @@
     "url_name": "oberon_prime_neuroptics"
   },
   {
+    "item_name": "OBERON PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Oberon_Prime_Set.d7f1623552bce11f166b715679e27022.128x128.png",
+    "id": "592dd262011e88f094afec81",
+    "url_name": "oberon_prime_set"
+  },
+  {
     "item_name": "OBERON PRIME SYSTEMS",
     "thumb": "https://warframe.market/static/assets/sub_icons/systems_128x128.png",
     "id": "592dd262011e88f094afec80",
@@ -1072,6 +1372,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/harness_128x128.png",
     "id": "5527a279e77989205639861f",
     "url_name": "odonata_prime_harness"
+  },
+  {
+    "item_name": "ODONATA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Odonata_Prime_Set.9087f5267b49dee37c38d36f57387753.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a7",
+    "url_name": "odonata_prime_set"
   },
   {
     "item_name": "ODONATA PRIME SYSTEMS",
@@ -1104,6 +1410,12 @@
     "url_name": "orthos_prime_handle"
   },
   {
+    "item_name": "ORTHOS PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Orthos_Prime_Set.049c8584708b849d1eff500b182825f2.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a8",
+    "url_name": "orthos_prime_set"
+  },
+  {
     "item_name": "PARIS PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "54a73e65e779893a797fff55",
@@ -1120,6 +1432,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/lower_limb_128x128.png",
     "id": "54a73e65e779893a797fff54",
     "url_name": "paris_prime_lower_limb"
+  },
+  {
+    "item_name": "PARIS PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Paris_Prime_Set.971f957f8304ce10617836343d47b238.128x128.png",
+    "id": "56783f24cbfa8f0432dd89a9",
+    "url_name": "paris_prime_set"
   },
   {
     "item_name": "PARIS PRIME STRING",
@@ -1152,6 +1470,12 @@
     "url_name": "pyrana_prime_receiver"
   },
   {
+    "item_name": "PYRANA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Pyrana_Prime_Set.006fc1f35a3662cb6d84ce6a7f63cd9e.128x128.png",
+    "id": "5b2985e3eb069f04ea65b0fa",
+    "url_name": "pyrana_prime_set"
+  },
+  {
     "item_name": "REAPER PRIME BLADE",
     "thumb": "https://warframe.market/static/assets/sub_icons/blade_128x128.png",
     "id": "54a73e65e779893a797fff58",
@@ -1168,6 +1492,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/handle_128x128.png",
     "id": "54a73e65e779893a797fff5a",
     "url_name": "reaper_prime_handle"
+  },
+  {
+    "item_name": "REAPER PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Reaper_Prime_Set.4e1d36812203a97fd0191930485b1095.128x128.png",
+    "id": "56783f24cbfa8f0432dd89aa",
+    "url_name": "reaper_prime_set"
   },
   {
     "item_name": "REDEEMER PRIME BLADE",
@@ -1188,6 +1518,12 @@
     "url_name": "redeemer_prime_handle"
   },
   {
+    "item_name": "REDEEMER PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Redeemer_Prime_Set.92fcede37c1ab66d22a2287dc2334731.128x128.png",
+    "id": "5c196faf96037800ddadac17",
+    "url_name": "redeemer_prime_set"
+  },
+  {
     "item_name": "RHINO PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "54a73e65e779893a797fff77",
@@ -1204,6 +1540,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "54a73e65e779893a797fff6f",
     "url_name": "rhino_prime_neuroptics"
+  },
+  {
+    "item_name": "RHINO PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Rhino_Prime_Set.22301207f9463fe9ab215e40eb23a326.128x128.png",
+    "id": "56783f24cbfa8f0432dd89ab",
+    "url_name": "rhino_prime_set"
   },
   {
     "item_name": "RHINO PRIME SYSTEMS",
@@ -1230,6 +1572,12 @@
     "url_name": "rubico_prime_receiver"
   },
   {
+    "item_name": "RUBICO PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Rubico_Prime_Set.2071211bc2436d4e768dbb61f98f6efd.128x128.png",
+    "id": "5baa8bbe4567de01ac283491",
+    "url_name": "rubico_prime_set"
+  },
+  {
     "item_name": "RUBICO PRIME STOCK",
     "thumb": "https://warframe.market/static/assets/sub_icons/stock_128x128.png",
     "id": "5baa8bbf4567de01ac283498",
@@ -1252,6 +1600,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "56c3bbdb5d2f0202da32e93c",
     "url_name": "saryn_prime_neuroptics"
+  },
+  {
+    "item_name": "SARYN PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Saryn_Prime_Set.394094bef0383f954bd38d622bb075e5.128x128.png",
+    "id": "56c3bbea5d2f0202da32e93f",
+    "url_name": "saryn_prime_set"
   },
   {
     "item_name": "SARYN PRIME SYSTEMS",
@@ -1278,6 +1632,12 @@
     "url_name": "scindo_prime_handle"
   },
   {
+    "item_name": "SCINDO PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Scindo_Prime_Set.ae70ac90b811a44f64263394b6410c28.128x128.png",
+    "id": "56783f24cbfa8f0432dd89ac",
+    "url_name": "scindo_prime_set"
+  },
+  {
     "item_name": "SICARUS PRIME BARREL",
     "thumb": "https://warframe.market/static/assets/sub_icons/barrel_128x128.png",
     "id": "54a73e65e779893a797fff5e",
@@ -1294,6 +1654,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/receiver_128x128.png",
     "id": "54a73e65e779893a797fff60",
     "url_name": "sicarus_prime_receiver"
+  },
+  {
+    "item_name": "SICARUS PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Sicarus_Prime_Set.e7c07172e6d63d49ae349d508c56fc85.128x128.png",
+    "id": "56783f24cbfa8f0432dd89ad",
+    "url_name": "sicarus_prime_set"
   },
   {
     "item_name": "SILVA & AEGIS PRIME BLADE",
@@ -1320,6 +1686,12 @@
     "url_name": "silva_and_aegis_prime_hilt"
   },
   {
+    "item_name": "SILVA & AEGIS PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Silva_&_Aegis_Prime_Set.d226bbe86d3eccd8c751958dba46a4f6.128x128.png",
+    "id": "592dd262011e88f094afec8b",
+    "url_name": "silva_and_aegis_prime_set"
+  },
+  {
     "item_name": "SOMA PRIME BARREL",
     "thumb": "https://warframe.market/static/assets/sub_icons/barrel_128x128.png",
     "id": "54a73e65e779893a797fff61",
@@ -1336,6 +1708,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/receiver_128x128.png",
     "id": "54a73e65e779893a797fff63",
     "url_name": "soma_prime_receiver"
+  },
+  {
+    "item_name": "SOMA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Soma_Prime_Set.1bf4937a6c2106c373cffeb93b1c87e0.128x128.png",
+    "id": "56783f24cbfa8f0432dd89ae",
+    "url_name": "soma_prime_set"
   },
   {
     "item_name": "SOMA PRIME STOCK",
@@ -1362,6 +1740,12 @@
     "url_name": "spira_prime_pouch"
   },
   {
+    "item_name": "SPIRA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Spira_Prime_Set.1a495b1cb31bba268dc7a50f2a4f7134.128x128.png",
+    "id": "56c3bc1c5d2f0202da32e947",
+    "url_name": "spira_prime_set"
+  },
+  {
     "item_name": "STRADAVAR PRIME BARREL",
     "thumb": "https://warframe.market/static/assets/sub_icons/barrel_128x128.png",
     "id": "5ca2866ffc2db2035eae059b",
@@ -1378,6 +1762,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/receiver_128x128.png",
     "id": "5ca28670fc2db2035eae05a3",
     "url_name": "stradavar_prime_receiver"
+  },
+  {
+    "item_name": "STRADAVAR PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Stradavar_Prime_Set.57c042a30996514288dfd70f2ce267ca.128x128.png",
+    "id": "5ca2866ffc2db2035eae059c",
+    "url_name": "stradavar_prime_set"
   },
   {
     "item_name": "STRADAVAR PRIME STOCK",
@@ -1404,6 +1794,12 @@
     "url_name": "sybaris_prime_receiver"
   },
   {
+    "item_name": "SYBARIS PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Sybaris_Prime_Set.39d7dc4a904f7db7e7c78901976aa5fa.128x128.png",
+    "id": "592dd262011e88f094afec86",
+    "url_name": "sybaris_prime_set"
+  },
+  {
     "item_name": "SYBARIS PRIME STOCK",
     "thumb": "https://warframe.market/static/assets/sub_icons/stock_128x128.png",
     "id": "592dd262011e88f094afec83",
@@ -1426,6 +1822,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/receiver_128x128.png",
     "id": "5ab167b8b2b6a80475780fc6",
     "url_name": "tiberon_prime_receiver"
+  },
+  {
+    "item_name": "TIBERON PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Tiberon_Prime_Set.53f3cf1c68314c0555fbb7020d01f001.128x128.png",
+    "id": "5ab167b8b2b6a80475780fc0",
+    "url_name": "tiberon_prime_set"
   },
   {
     "item_name": "TIBERON PRIME STOCK",
@@ -1452,6 +1854,12 @@
     "url_name": "tigris_prime_receiver"
   },
   {
+    "item_name": "TIGRIS PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Tigris_Prime_Set.5f82721ea78697c95208b9bceb72c4a4.128x128.png",
+    "id": "57bc9c84e506eb45ea251455",
+    "url_name": "tigris_prime_set"
+  },
+  {
     "item_name": "TIGRIS PRIME STOCK",
     "thumb": "https://warframe.market/static/assets/sub_icons/stock_128x128.png",
     "id": "57bc9c84e506eb45ea251456",
@@ -1476,6 +1884,12 @@
     "url_name": "tipedo_prime_ornament"
   },
   {
+    "item_name": "TIPEDO PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Tipedo_Prime_Set.fd4fdcee6ab035eddce9a802ff091cfd.128x128.png",
+    "id": "5ca28670fc2db2035eae05a2",
+    "url_name": "tipedo_prime_set"
+  },
+  {
     "item_name": "TRINITY PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "56153689b66f836f7a3c0baf",
@@ -1492,6 +1906,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "56153692b66f836f7d649936",
     "url_name": "trinity_prime_neuroptics"
+  },
+  {
+    "item_name": "TRINITY PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Trinity_Prime_Set.4115dba418ab8ee70197a7fdaee8da76.128x128.png",
+    "id": "56783f24cbfa8f0432dd89af",
+    "url_name": "trinity_prime_set"
   },
   {
     "item_name": "TRINITY PRIME SYSTEMS",
@@ -1518,6 +1938,12 @@
     "url_name": "valkyr_prime_neuroptics"
   },
   {
+    "item_name": "VALKYR PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Valkyr_Prime_Set.a5c906d66a11ff70158f0ffad0c628e8.128x128.png",
+    "id": "58358a0e2c2ada0047b386fa",
+    "url_name": "valkyr_prime_set"
+  },
+  {
     "item_name": "VALKYR PRIME SYSTEMS",
     "thumb": "https://warframe.market/static/assets/sub_icons/systems_128x128.png",
     "id": "58358a0c2c2ada0047b386f9",
@@ -1542,6 +1968,12 @@
     "url_name": "vasto_prime_receiver"
   },
   {
+    "item_name": "VASTO PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Vasto_Prime_Set.213e4b3b9b3be0f4facb77fd5242b6a4.128x128.png",
+    "id": "56783f24cbfa8f0432dd89b0",
+    "url_name": "vasto_prime_set"
+  },
+  {
     "item_name": "VAUBAN PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "573b7fbd0ec44a47787a690d",
@@ -1558,6 +1990,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "573b7fc80ec44a47787a690f",
     "url_name": "vauban_prime_neuroptics"
+  },
+  {
+    "item_name": "VAUBAN PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Vauban_Prime_Set.9c15bb47d3ed4ed8e960c2502fac82f2.128x128.png",
+    "id": "573b7fcc0ec44a47787a6910",
+    "url_name": "vauban_prime_set"
   },
   {
     "item_name": "VAUBAN PRIME SYSTEMS",
@@ -1584,6 +2022,12 @@
     "url_name": "vectis_prime_receiver"
   },
   {
+    "item_name": "VECTIS PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Vectis_Prime_Set.028e001af4469482df80bff29542e043.128x128.png",
+    "id": "56783f24cbfa8f0432dd89b1",
+    "url_name": "vectis_prime_set"
+  },
+  {
     "item_name": "VECTIS PRIME STOCK",
     "thumb": "https://warframe.market/static/assets/sub_icons/stock_128x128.png",
     "id": "559daaf7e779897b5f3f5480",
@@ -1608,6 +2052,12 @@
     "url_name": "venka_prime_gauntlet"
   },
   {
+    "item_name": "VENKA PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Venka_Prime_Set.123cb62ab1e8a4edd78997a256cf1e7f.128x128.png",
+    "id": "58358e1d2c2ada00655a4ef7",
+    "url_name": "venka_prime_set"
+  },
+  {
     "item_name": "VOLT PRIME BLUEPRINT",
     "thumb": "https://warframe.market/static/assets/sub_icons/blueprint_128x128.png",
     "id": "55244820e779890907ef6805",
@@ -1624,6 +2074,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "55158cd0e7798915e9d64c1e",
     "url_name": "volt_prime_neuroptics"
+  },
+  {
+    "item_name": "VOLT PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Volt_Prime_Set.9481daa3eb02aaec1108cdbeeaeea159.128x128.png",
+    "id": "56783f24cbfa8f0432dd89b2",
+    "url_name": "volt_prime_set"
   },
   {
     "item_name": "VOLT PRIME SYSTEMS",
@@ -1650,6 +2106,12 @@
     "url_name": "wyrm_prime_cerebrum"
   },
   {
+    "item_name": "WYRM PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Wyrm_Prime_Set.4da3da5cc8eeef554dc3208bbb5a8f26.128x128.png",
+    "id": "56783f24cbfa8f0432dd89b3",
+    "url_name": "wyrm_prime_set"
+  },
+  {
     "item_name": "WYRM PRIME SYSTEMS",
     "thumb": "https://warframe.market/static/assets/sub_icons/systems_128x128.png",
     "id": "54ca4337e779891a2e3fbc83",
@@ -1672,6 +2134,12 @@
     "thumb": "https://warframe.market/static/assets/sub_icons/neuroptics_128x128.png",
     "id": "5ab1570db2b6a8044d5137c1",
     "url_name": "zephyr_prime_neuroptics"
+  },
+  {
+    "item_name": "ZEPHYR PRIME SET",
+    "thumb": "https://warframe.market/static/assets/icons/en/thumbs/Zephyr_Prime_Set.4ffc19dd100b3c182beef5f1ef3d337e.128x128.png",
+    "id": "5ab1570db2b6a8044d5137c5",
+    "url_name": "zephyr_prime_set"
   },
   {
     "item_name": "ZEPHYR PRIME SYSTEMS",
