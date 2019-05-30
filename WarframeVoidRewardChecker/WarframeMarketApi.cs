@@ -12,11 +12,11 @@ namespace WarframeVoidRewardChecker
     public static class WarframeMarketApi
     {
         //API docs: https://docs.google.com/document/d/1121cjBNN4BeZdMBGil6Qbuqse-sWpEXPpitQH5fb_Fo/edit#heading=h.irwashnbboeo
-        readonly static string apiCallAllItems = @"https://api.warframe.market/v1/items";
         readonly static string JSONpath = @"D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\Resources\Files\";
         readonly static string primeJsonFileName = "PrimeItems.json";
 
-        readonly static string warframeMarketBaseUrl = @"https://warframe.market/static/assets/";
+        readonly static string warframeMarketApiBaseUrl = @"https://api.warframe.market/v1/items";
+        readonly static string warframeMarketAssetsBaseUrl = @"https://warframe.market/static/assets/";
 
         static List<WarframeItem> allPrimeItems = new List<WarframeItem>();
         static List<List<WarframeItem>> allPrimesBySet = new List<List<WarframeItem>>();
@@ -39,8 +39,19 @@ namespace WarframeVoidRewardChecker
             if (CheckForPrimedItemsJson())
                 return;
 
+            RequestAllItems();
+        }
+
+        /// <summary>
+        /// Requests a json containing all items available on the warframe market, from their API.
+        /// </summary>
+        private static void RequestAllItems()
+        {
             //Create a call to the warframe market API to get a list of all the items
-            WebRequest apiItemRequest = WebRequest.Create(apiCallAllItems);
+            WebRequest apiItemRequest = WebRequest.Create(warframeMarketApiBaseUrl);
+            apiItemRequest.Headers.Add("Language", "en");
+            apiItemRequest.Headers.Add("Platform", "pc");
+
             apiItemRequest.Credentials = CredentialCache.DefaultCredentials;
 
             //Get the response from the API
@@ -60,14 +71,49 @@ namespace WarframeVoidRewardChecker
                 rawItemJson = reader.ReadToEnd();
             }
 
-            SavePrimeItemsJson(rawItemJson);
+            CreateJsonObject(rawItemJson);
+        }
+
+        /// <summary>
+        /// Request specific item info from the API
+        /// </summary>
+        /// <param name="itemName"></param>
+        public static string RequestItemInfo(string itemName)
+        {
+            string requestUrl = warframeMarketApiBaseUrl + "/" + itemName;
+
+            WebRequest apiItemRequest = WebRequest.Create(requestUrl);
+
+            apiItemRequest.Headers.Add("Language", "en");
+            apiItemRequest.Headers.Add("Platform", "pc");
+
+            apiItemRequest.Credentials = CredentialCache.DefaultCredentials;
+
+            //Get the response from the API
+            HttpWebResponse response = (HttpWebResponse)apiItemRequest.GetResponse();
+
+            Console.WriteLine("Response status: " + response.StatusCode);
+            if (response.StatusCode != HttpStatusCode.OK)
+            {
+                Console.WriteLine("Error in getting all items, code {0}", response.StatusCode);
+                return null;
+            }
+
+            string jsonResult = "";
+            //Read the actual data from the response
+            using (StreamReader reader = new StreamReader(response.GetResponseStream()))
+            {
+                jsonResult = reader.ReadToEnd();
+            }
+
+            return jsonResult;
         }
 
         /// <summary>
         /// Save the rawJson string containing the prime items list to json
         /// </summary>
         /// <param name="rawItemJson"></param>
-        private static void SavePrimeItemsJson(string rawItemJson)
+        private static void CreateJsonObject(string rawItemJson)
         {
             JObject jsonResults = JObject.Parse(rawItemJson);
             List<JToken> filteredResults = jsonResults["payload"]["items"]["en"].Children().ToList();
@@ -78,7 +124,7 @@ namespace WarframeVoidRewardChecker
                 //Get rid of any non-prime items (like mods) and items sets.
                 if (item.item_name.Contains("Prime") && !item.item_name.Contains("Primed"))
                 {
-                    item.SetThumb(warframeMarketBaseUrl + item.thumb);
+                    item.SetThumb(warframeMarketAssetsBaseUrl + item.thumb);
                     item.SetItemName(item.item_name.ToUpper());
                     allPrimeItems.Add(item);
                 }
@@ -88,7 +134,7 @@ namespace WarframeVoidRewardChecker
             allPrimeItems = allPrimeItems.OrderBy(o => o.item_name).ToList();
             SavePrimesBySet();
 
-            SavePrimesToJson();
+            SaveToJsonFile();
         }
 
         /// <summary>
@@ -105,19 +151,18 @@ namespace WarframeVoidRewardChecker
                     {
                         allPrimeItems[i]
                     };
-                    for (int j = i; j >= 0; j--)
+                    string sub = setItemName.Substring(0, setItemName.IndexOf(' '));
+
+                    //Check the 5 items below and above I for set items, we need to use min/max to clamp the loop between 0 and length of the list
+                    for (int j = Math.Max(0, i - 5); j < Math.Min(i + 5, allPrimeItems.Count); j++)
                     {
-                        string sub = setItemName.Substring(0, setItemName.IndexOf(' '));
-                        if (allPrimeItems[j].item_name.Contains(sub) && !allPrimeItems[j].item_name.Contains("SET"))
+                        string firstWord = allPrimeItems[j].item_name.Substring(0, allPrimeItems[j].item_name.IndexOf(' '));
+                        //Filter out the Set item itself
+                        if (firstWord.Equals(sub) && !allPrimeItems[j].item_name.Contains("SET"))
                         {
                             itemSet.Add(allPrimeItems[j]);
                         }
-                        else if (!allPrimeItems[j].item_name.Contains(sub))
-                        {
-                            break;
-                        }
                     }
-
                     allPrimesBySet.Add(itemSet);
                 }
             }
@@ -141,6 +186,7 @@ namespace WarframeVoidRewardChecker
             }
         }
 
+        #region Load/Save json
         /// <summary>
         /// Read in the existing PrimeItems.json into "allPrimeItems" List
         /// </summary>
@@ -166,7 +212,7 @@ namespace WarframeVoidRewardChecker
         /// <summary>
         /// Saves the filtered list of prime items to a new json file called "PrimeItems.json"
         /// </summary>
-        internal static void SavePrimesToJson()
+        internal static void SaveToJsonFile()
         {
             DefaultContractResolver contractResolver = new DefaultContractResolver
             {
@@ -189,6 +235,7 @@ namespace WarframeVoidRewardChecker
             Console.WriteLine("PrimeItems.json was sucesfully created");
         }
     }
+    #endregion
 
     internal class WarframeItem
     {

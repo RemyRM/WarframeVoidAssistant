@@ -18,3 +18,5 @@ D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\bin\Debug\Newtonso
 D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\bin\Debug\Newtonsoft.Json.xml
 D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\obj\Debug\WarframeVoidRewardChecker.VoidChecker.resources
 D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\obj\Debug\WarframeVoidRewardChecker.Inventory.resources
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\bin\Debug\IronOcr.dll
+D:\Dev\C#\WarframeVoidRewardChecker\WarframeVoidRewardChecker\bin\Debug\IronOcr.xml

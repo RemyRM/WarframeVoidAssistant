@@ -34,15 +34,15 @@ namespace WarframeVoidRewardChecker
 
         #endregion
 
-        static RECT rect;
+        RECT rect;
 
-        static Process warframeProcess;
-        static IntPtr windowHandle;
+        Process warframeProcess;
+        IntPtr windowHandle;
 
-        static int windowHeight;
-        static int windowWidth;
-        static int yOffset;
-        static int[] xOffsets;
+        int windowHeight;
+        int windowWidth;
+        int yOffset;
+        int[] xOffsets;
 
         internal static List<string> results = new List<string>();
 
@@ -51,52 +51,65 @@ namespace WarframeVoidRewardChecker
         /// </summary>
         public VoidChecker()
         {
-            StartPosition = FormStartPosition.CenterScreen;
-            InitializeComponent();
-            Init();
+            if (Init())
+            {
+                StartPosition = FormStartPosition.CenterScreen;
+                InitializeComponent();
+                Size = new Size(rect.Right - rect.Left, rect.Bottom - rect.Top);
 
-            Size = new Size(rect.Right - rect.Left, rect.Bottom - rect.Top);
+                FormBorderStyle = FormBorderStyle.None;
+                BackColor = Color.LimeGreen;
+                TransparencyKey = Color.LimeGreen;
 
-            FormBorderStyle = FormBorderStyle.None;
-            BackColor = Color.LimeGreen;
-            TransparencyKey = Color.LimeGreen;
 
-            Thread t = new Thread(InputLoop);
-            t.Start();
+                Thread t = new Thread(InputLoop);
+                t.Start();
+            }
+            else
+            {
+                Console.WriteLine("init was false");
+            }
+
         }
 
         /// <summary>
         /// Initialisation
         /// </summary>
-        static void Init()
+        bool Init()
         {
-            GetWarframeProcess();
-
-            rect = new RECT();
-            GetWindowRect(windowHandle, ref rect);
-
-            windowHeight = rect.Bottom - rect.Top;
-            windowWidth = rect.Right - rect.Left;
-            yOffset = (int)Math.Floor(windowHeight / 2.355);
-
-            xOffsets = new int[]
+            if (GetWarframeProcess())
             {
-                (int)Math.Floor(windowWidth / 18.0),
-                (int)Math.Floor(windowWidth / 3.55),
-                (int)Math.Floor(windowWidth / 1.98),
-                (int)Math.Floor(windowWidth / 1.37)
-            };
+                rect = new RECT();
+                GetWindowRect(windowHandle, ref rect);
 
-            Debug.WriteLine("Left: " + rect.Left + " Right: " + rect.Right + " top: " + rect.Top + " bottom: " + rect.Bottom);
-            Debug.WriteLine("width: " + windowWidth);
-            Debug.WriteLine("height:" + windowHeight);
+                windowHeight = rect.Bottom - rect.Top;
+                windowWidth = rect.Right - rect.Left;
+                yOffset = (int)Math.Floor(windowHeight / 2.0);
+
+                xOffsets = new int[]
+                {
+                (int)Math.Floor(windowWidth / 4.0),
+                (int)Math.Floor(windowWidth / 2.66),
+                (int)Math.Floor(windowWidth / 1.99),
+                (int)Math.Floor(windowWidth / 1.59)
+                };
+
+                Console.WriteLine("Left: " + rect.Left + " Right: " + rect.Right + " top: " + rect.Top + " bottom: " + rect.Bottom);
+                Console.WriteLine("width: " + windowWidth);
+                Console.WriteLine("height:" + windowHeight);
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("returned false");
+                return false;
+            }
         }
 
         /// <summary>
         /// Get the warframe process
         /// </summary>
-        static int iter = 0;
-        static void GetWarframeProcess()
+        bool GetWarframeProcess()
         {
             try
             {
@@ -107,30 +120,43 @@ namespace WarframeVoidRewardChecker
                 {
                     windowHandle = warframeProcess.MainWindowHandle;
                     Debug.WriteLine("Warframe was found");
+                    return true;
                 }
                 else
                 {
-                    if (iter > 10)
+                    //start new warframe process
+                    string caption = "Warframe not found";
+                    string message = "Warframe not found. Start Warframe and retry.";
+                    MessageBoxButtons buttons = MessageBoxButtons.RetryCancel;
+                    DialogResult result;
+
+                    result = MessageBox.Show(message, caption, buttons);
+                    if (result == DialogResult.Retry)
                     {
-                        //start new warframe process
+                        GetWarframeProcess();
+                        return false;
                     }
-                    Debug.WriteLine("Warframe was not found, retrying");
-                    iter++;
-                    GetWarframeProcess();
+                    else
+                    {
+                        Console.WriteLine("close.");
+                        return false;
+                    }
                 }
             }
             catch (Exception e)
             {
                 Debug.WriteLine("Error: " + e);
+                return false;
             }
         }
 
         /// <summary>
         /// Main loop that waits for a keypress
         /// </summary>
-        static void InputLoop()
+        void InputLoop()
         {
             Console.WriteLine("Input loop is ready");
+            Debug.WriteLine("Input loop is ready");
             while (true)
             {
                 if (GetAsyncKeyState(Keys.F10) < 0)
@@ -144,10 +170,10 @@ namespace WarframeVoidRewardChecker
                     {
                         Console.WriteLine(s);
                     }
-                    //Thread.Sleep(2000);
                     Console.WriteLine("-------------------------");
                     results.Clear();
-                    //Console.ReadLine();
+                    //keep looping untill f10 is released so it doenst create a billion screenshots
+                    while (GetAsyncKeyState(Keys.F10) < 0) ;
                 }
             }
         }
@@ -157,11 +183,11 @@ namespace WarframeVoidRewardChecker
         /// </summary>
         /// <param name="x">Location offset along the x axis</param>
         /// <param name="y">Location offset along the y axis</param>
-        static void TakeScreenShot(int x, int y)
+        void TakeScreenShot(int x, int y)
         {
 
             //Create a new bitmap.
-            var bmpScreenshot = new Bitmap(400, 30, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+            var bmpScreenshot = new Bitmap(235, 50, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
             //Create a graphics object from the bitmap.
             var gfxScreenshot = Graphics.FromImage(bmpScreenshot);
             //Copy the pixels from the screen into the Graphics
@@ -175,8 +201,8 @@ namespace WarframeVoidRewardChecker
             //bmpScreenshot = RemoveBackground(bmpScreenshot);
 
             bmpScreenshot.Save(path, System.Drawing.Imaging.ImageFormat.Png);
-
             TesseractOCR.Tesseract(path);
+
         }
 
         /// <summary>
@@ -184,14 +210,14 @@ namespace WarframeVoidRewardChecker
         /// </summary>
         /// <param name="bmp"></param>
         /// <returns></returns>
-        private static Bitmap RemoveBackground(Bitmap bmp)
+        Bitmap RemoveBackground(Bitmap bmp)
         {
             for (int y = 0; y < bmp.Height; y++)
             {
                 for (int x = 0; x < bmp.Width; x++)
                 {
                     Color c = bmp.GetPixel(x, y);
-                    if (c.B < 30)
+                    if (c.B < 50)
                     {
                         bmp.SetPixel(x, y, Color.FromArgb(0, 0, 0, 0));
                     }
@@ -206,7 +232,7 @@ namespace WarframeVoidRewardChecker
         /// </summary>
         /// <param name="Bmp"></param>
         /// <returns></returns>
-        static Bitmap ToGrayScale(Bitmap Bmp)
+        Bitmap ToGrayScale(Bitmap Bmp)
         {
             int rgb;
             Color c;

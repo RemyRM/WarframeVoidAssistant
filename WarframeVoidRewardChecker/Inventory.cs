@@ -4,6 +4,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Threading;
 using System.Windows.Forms;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -32,6 +33,8 @@ namespace WarframeVoidRewardChecker
 
         static Label itemImageLabel;
         static Label itemIDLabel;
+        static Label itemRelicLabel;
+        static Label itemDucatsLabel;
 
         /// <summary>
         /// Inventory constructor, gets called before the load
@@ -263,15 +266,15 @@ namespace WarframeVoidRewardChecker
         {
             LinkLabel s = (LinkLabel)sender;
 
-            WarframeItem item = allPrimeItems.FirstOrDefault(o => o.item_name.Equals(s.Text));
+            WarframeItem wfItem = allPrimeItems.FirstOrDefault(o => o.item_name.Equals(s.Text));
 
-            itemIDLabel.Text = item.id;
+            itemIDLabel.Text = wfItem.id;
 
             //Get the thumbnail of the item and display it in the image label
             Image thumbnail = null;
             using (var client = new WebClient())
             {
-                byte[] buffer = client.DownloadData(item.thumb);
+                byte[] buffer = client.DownloadData(wfItem.thumb);
                 using (var stream = new MemoryStream(buffer))
                 {
                     thumbnail = Image.FromStream(stream);
@@ -279,7 +282,24 @@ namespace WarframeVoidRewardChecker
             }
 
             itemImageLabel.Image = thumbnail;
+
+            //string rawJson = WarframeMarketApi.RequestItemInfo(wfItem.url_name);
+
+            //JObject jsonResults = JObject.Parse(rawJson);
+            //List<JToken> filteredResults = jsonResults["payload"]["item"]["items_in_set"][0].ToList();
+            //string ducats = "";
+            //foreach (JToken item in filteredResults)
+            //{
+            //    if (item.Path.Contains("ducats"))
+            //    {
+            //        Console.WriteLine(item.Path);
+            //        ducats = new string(item.ToString().Where(char.IsDigit).ToArray());
+            //    }
+            //}
+            //Console.WriteLine(ducats);
         }
+
+        #region layout
 
         /// <summary>
         /// Creates the header labels at the top of the window
@@ -334,12 +354,6 @@ namespace WarframeVoidRewardChecker
             searchField.GotFocus += SearchField_Click;
         }
 
-        private void SearchField_Click(object sender, EventArgs e)
-        {
-            TextBox searchBox = (TextBox)sender;
-            searchBox.Text = "";
-        }
-
         /// <summary>
         /// Create the panel in which all the selected item's information will be shown
         /// </summary>
@@ -349,27 +363,48 @@ namespace WarframeVoidRewardChecker
             {
                 Name = "ItemInformationPanel",
                 BackColor = Color.Cyan,
-                Size = new Size(300, 400),
+                Size = new Size(450, 450),
                 Location = new Point(725, 75)
             };
             Controls.Add(ItemInformationPanel);
 
-            CreateIDLabel(ItemInformationPanel);
             CreateImageLabel(ItemInformationPanel);
+            CreateIDLabel(ItemInformationPanel);
+            CreateRelicLabel(ItemInformationPanel);
+            CreateDucatsLabel(ItemInformationPanel);
         }
+
+        private void CreateLaunchAssistantButton()
+        {
+            Button launchButton = new Button()
+            {
+                Name = "LaunchButton",
+                Location = new Point(750, 550),
+                Size = new Size(400, 100),
+                Font = new Font("Arial", 20, FontStyle.Bold),
+                Text = "Launch",
+            };
+            launchButton.Click += LaunchButton_Click;
+
+            Controls.Add(launchButton);
+        }
+
+
+
         /// <summary>
         /// Create the image panel in which the thumbnail of the selected item is shown
         /// </summary>
         private void CreateImageLabel(Control control)
         {
+            int imageDimension = 128;
+            int borderPadding = 10;
             Label imageLabel = new Label()
             {
                 Name = "ImageLabel",
                 BackColor = Color.Magenta,
-                Size = new Size(128, 128),
-                Location = new Point(162, 10),
+                Size = new Size(imageDimension, imageDimension),
+                Location = new Point(control.Width - imageDimension - borderPadding, borderPadding),
             };
-
             itemImageLabel = imageLabel;
             control.Controls.Add(imageLabel);
         }
@@ -383,7 +418,7 @@ namespace WarframeVoidRewardChecker
                 Font = itemEntryFont,
                 Text = "ID:",
                 AutoSize = true,
-                Location = new Point(10, control.Size.Height - 30)
+                Location = new Point(10, 10)
             };
             control.Controls.Add(itemIDHeader);
 
@@ -392,13 +427,63 @@ namespace WarframeVoidRewardChecker
                 Name = "ItemID",
                 Font = itemEntryFont,
                 AutoSize = true,
-                Location = new Point(35, control.Size.Height - 30)
+                Location = new Point(35, 10)
             };
             control.Controls.Add(itemID);
             itemIDLabel = itemID;
         }
 
-        #region inventory_listeners
+        private void CreateRelicLabel(Control control)
+        {
+            Label itemRelicHeader = new Label()
+            {
+                Name = "ItemRelicHeader",
+                Text = "Relic:",
+                Font = itemEntryFont,
+                AutoSize = true,
+                Location = new Point(10, 35),
+            };
+            control.Controls.Add(itemRelicHeader);
+
+            Label itemRelic = new Label()
+            {
+                Name = "ItemRelic",
+                Font = itemEntryFont,
+                Text = "",
+                AutoSize = true,
+                Location = new Point(55, 35),
+            };
+            control.Controls.Add(itemRelic);
+            itemRelicLabel = itemRelic;
+        }
+
+        private void CreateDucatsLabel(Control control)
+        {
+            Label itemDucatHeader = new Label()
+            {
+                Name = "ItemDucatsHeader",
+                Font = itemEntryFont,
+                Text = "Ducats:",
+                AutoSize = true,
+                Location = new Point(10, 60),
+            };
+            control.Controls.Add(itemDucatHeader);
+
+            Label itemDucats = new Label()
+            {
+                Name = "ItemDucats",
+                Font = itemEntryFont,
+                Text = "100",
+                AutoSize = true,
+                Location = new Point(65, 60),
+            };
+            control.Controls.Add(itemDucats);
+            itemDucatsLabel = itemDucats;
+        }
+        #endregion
+
+        #region Listeners
+
         /// <summary>
         /// Gets called when the form gets loaded in
         /// </summary>
@@ -408,15 +493,15 @@ namespace WarframeVoidRewardChecker
         {
             Control control = (Control)sender;
 
-            CreateHeaderLabels();
-            CreateSearchBar();
-
             //Set the position and size of the main panel in which the items are listed
             MainItemPanel.Location = new Point(10, 75);
             MainItemPanel.Height = control.Size.Height - mainPanelHeightOffset;
             MainItemPanel.Width = 700;
 
+            CreateHeaderLabels();
             CreateItemInformationPanel();
+            CreateSearchBar();
+            CreateLaunchAssistantButton();
         }
 
         private void Inventory_FormClosing(object sender, FormClosingEventArgs e)
@@ -443,8 +528,53 @@ namespace WarframeVoidRewardChecker
                 MainItemPanel.Width = 700;
             }
         }
+
+        private void SearchField_Click(object sender, EventArgs e)
+        {
+            TextBox searchBox = (TextBox)sender;
+            searchBox.Text = "";
+        }
+
+        VoidChecker voidChecker = null;
+        /// <summary>
+        /// Clicking the launch button will start the VoidChecker, if it is already running show a messagebox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void LaunchButton_Click(object sender, EventArgs e)
+        {
+            if (voidChecker == null)
+            {
+                //StartChecker();
+
+                //Uncomment this together with voidChecker = new VoidChecker in startChecker
+                Thread t = new Thread(new ThreadStart(StartChecker));
+                t.Start();
+            }
+            else
+            {
+                string caption = "Void checker already running";
+                string message = "The void checker is already running...";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                DialogResult result;
+
+                result = MessageBox.Show(caption, message, buttons);
+            }
+        }
+
+        private void StartChecker()
+        {
+            //Use this to hide the program from the taskbar
+            voidChecker = new VoidChecker();
+
+            //Use this to show it on the taskbar
+            //Form F = new VoidChecker();
+            //F.ShowDialog();
+        }
         #endregion
     }
+
+    #region Inventory classes
 
     internal class InventorySetEntry
     {
@@ -481,4 +611,5 @@ namespace WarframeVoidRewardChecker
             HasCraftedBlueprint = value;
         }
     }
+    #endregion
 }
